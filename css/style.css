@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+}
+
+/* Degradado para Navbar y Footer */
+.gradient-bg {
+    background: linear-gradient(to left, #0756b4, #166fbd);
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    overflow: hidden;
+    height: 400px;
+}
+
+/* Wrapper del carrusel */
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Elementos del carrusel */
+.carousel-item {
+    position: absolute;
+    width: 30%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Imágenes dentro del carrusel */
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Imagen del centro más grande */
+.carousel-item.center {
+    width: 40%;
+    z-index: 2;
+    transform: scale(1.2);
+    filter: brightness(1);
+}
+
+/* Laterales más pequeñas y oscuras */
+.carousel-item:not(.center) {
+    z-index: 1;
+    filter: brightness(0.5);
+    transform: scale(0.9);
+}
+
+/* Botones de navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
