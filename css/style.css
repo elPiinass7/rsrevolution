@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.782); /* Gradiente basado en la paleta del logo */
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(to left, #011efa, #2caeff); /* Gradiente personalizado */
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Mover el botón de navegación a la derecha */
+}
+
+.text-center {
+    margin-top: 50px; /* Espacio fijo encima del texto */
+    margin-bottom: 50px; /* Espacio fijo debajo del texto */
+
+}
+.swiper-container {
+    position: relative; /* Define el contenedor como referencia para las flechas */
+    margin-bottom: 0; /* slider no tenga márgenes adicionales */
+}
+
+.swiper-wrapper {
+    gap: 20px; /* Ajusta el espacio entre imágenes */
+}
+
+.swiper-slide img {
+    max-width: 500px; /* Asegura que la imagen no se desborde horizontalmente */
+    max-height: 500px; /* Establece un alto máximo para las imágenes */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to left, #011efa, #2caeff); /* Gradiente personalizado */
+    margin-top: auto; /* Empuja el footer al fondo */
+    padding: 40px 20px;
+    color: white;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .contact-form button {
+    background-color: #2caeff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .contact-form button:hover {
+    background-color: #011efa;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icons a img {
+    width: 40px;
+    height: 40px;
+}
+
+.dynamic-text {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* Color acorde a tu diseño */
+    overflow: hidden; /* Esconde texto mientras se borra */
+    white-space: nowrap; /* Evita saltos de línea */
+    animation: blink-caret 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
