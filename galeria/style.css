@@ -1,0 +1,38 @@
+ .nav-text {
+    color: white;
+  }
+
+.slider-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: auto;
+    border-radius: 10px;
+  }
+  
+  .btn-link {
+    color: #36b4fd;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }  
+
+  .destacable{
+    color: #36b4fd;
+  }
