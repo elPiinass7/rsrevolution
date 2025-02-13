@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.782);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background: linear-gradient(to left, #013bfa, #34b1ff);
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.text-center {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+:root {
+    --slider-gap: clamp(10px, 2.5vw, 25px);
+    --slide-width: calc((100% - 2 * var(--slider-gap)) / 2);
+  }
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider-track {
+    display: flex;
+    gap: var(--slider-gap);
+    transition: transform 0.5s ease;
+    will-change: transform;
+  }
+  .slide {
+    flex-shrink: 0;
+    width: var(--slide-width);
+    position: relative;
+  }
+  .slide img {
+    width: 100%;
+    display: block;
+    border-radius: 23.33px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  .slide.active img {
+    transform: scale(1);
+    filter: brightness(1.1);
+  }
+  .slide:not(.active) img {
+    transform: scale(0.8);
+    filter: brightness(0.6);
+  }  
+
+footer {
+    background: linear-gradient(to left, #013bfa, #34b1ff); 
+    margin-top: auto;
+    padding: 40px 20px;
+    color: white;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .contact-form button {
+    background-color: #2caeff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .contact-form button:hover {
+    background-color: #011efa;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icons a img {
+    width: 40px;
+    height: 40px;
+}
+
+.dynamic-text {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blink-caret 0.7s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
