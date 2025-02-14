@@ -1,10 +1,10 @@
 h2 {
-    margin-top: 5px;
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .fotosPerm {
-    border-radius: 7px;
+    border-radius: 10px;
     position: relative;
     display: flex;
 }
