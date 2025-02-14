@@ -5,11 +5,11 @@ h2 {
 
 .fotosPerm {
     border-radius: 12.33px;
-    position: cover;
+    position: auto;
     margin:auto;
     display: flex;
-    width: auto;
-    height: auto;
+    width: 600px;
+    height: 600px;
 }
 
 .slider-container {
