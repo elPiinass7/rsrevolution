@@ -4,9 +4,8 @@ h2 {
 }
 
 .fotosPerm {
-    width: 100%;
     border-radius: 12.33px;
-    position: cover;
+    position: relative;
     min-height: 800px;
 }
 
