@@ -5,6 +5,8 @@ h2 {
 
 .fotosPerm {
     width: 100%;
+    max-height: 400px;
+    margin: auto;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -14,7 +16,7 @@ h2 {
     width: 100%;
     max-height: 300px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
