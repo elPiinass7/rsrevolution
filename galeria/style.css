@@ -5,7 +5,9 @@ h2 {
 
 .fotosPerm {
     border-radius: 12.33px;
-    position: relative;
+    position: cover;
+    margin:auto;
+    display: flex;
     width: auto;
     height: auto;
 }
