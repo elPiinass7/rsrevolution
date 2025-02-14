@@ -4,9 +4,10 @@ h2 {
 }
 
 .fotosPerm {
+    width: 100%;
     border-radius: 12.33px;
     position: cover;
-    max-height: 300px;
+    min-height: 800px;
 }
 
 .slider-container {
