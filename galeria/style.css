@@ -1,8 +1,8 @@
 .fotosPerm {
     border-radius: 4px;
-    
+    position: center;
+    display: flex;
 }
-
 
 .slider-container {
     width: 100%;
