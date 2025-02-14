@@ -6,7 +6,8 @@ h2 {
 .fotosPerm {
     border-radius: 12.33px;
     position: relative;
-    min-height: 800px;
+    width: auto;
+    height: auto;
 }
 
 .slider-container {
