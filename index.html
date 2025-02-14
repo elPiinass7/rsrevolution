@@ -101,6 +101,12 @@
                 </form>
               
                 <script type="text/javascript">
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevenir el comportamiento por defecto
+  console.log("El formulario se ha enviado.");
+  // ... el resto del código
+});
+
                   document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
               
