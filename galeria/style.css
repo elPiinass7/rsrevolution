@@ -1,14 +1,35 @@
-h2 {
-    margin-top: 20px;
-    margin-bottom: 15px;
+.subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%; 
+}
+
+.col {
+  flex: 1 1 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fotosPerm {
-    border-radius: 12.33px;
-    position: auto;
-    margin:auto;
-    display: flex;
+  max-width: 100%;
+  height: auto; 
+  object-fit: contain; 
 }
+
 
 .slider-container {
     width: 100%;
