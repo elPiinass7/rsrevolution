@@ -16,7 +16,7 @@ body {
 
 /* Personaliza el fondo del track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Cambia este color para que coincida con la estética de RS */
+  background: linear-gradient(to left, #013bfa, #34b1ff); /* Cambia este color para que coincida con la estética de RS */
 }
 
 /* Estiliza el "thumb" (la parte móvil) */
