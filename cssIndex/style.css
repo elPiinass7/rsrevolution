@@ -8,7 +8,28 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-  
+
+/* Define el ancho de la barra */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Personaliza el fondo del track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cambia este color para que coincida con la estética de RS */
+}
+
+/* Estiliza el "thumb" (la parte móvil) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Ajusta a los colores de RS */
+  border-radius: 4px; /* Bordes redondeados para un look más moderno */
+  transition: background-color 0.3s; /* Suaviza la transición al interactuar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 nav {
     background: linear-gradient(to left, #013bfa, #34b1ff);
 }
