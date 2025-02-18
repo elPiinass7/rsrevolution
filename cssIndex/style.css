@@ -8,10 +8,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
-::-webkit-scrollbar {
-    width: 0px;
-  }
   
 nav {
     background: linear-gradient(to left, #013bfa, #34b1ff);
