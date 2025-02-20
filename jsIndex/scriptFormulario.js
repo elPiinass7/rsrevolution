@@ -12,11 +12,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       to_name: "RS Revolution",
       "g-recaptcha-response": recaptchaResponse    
     })
-    .then(function(response) {
-      "success": true|false,
-      "challenge_ts": timestamp, 
-      "hostname": string,         
-      "error-codes": [...]    
+    .then(function(response) {  
       console.log('SUCCESS!', response.status, response.text);
       alert("¡Mensaje enviado correctamente!");
       document.getElementById('contact-form').reset();
