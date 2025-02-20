@@ -10,9 +10,13 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       reply_to: document.getElementById('email').value,
       message: document.getElementById('message').value,
       to_name: "RS Revolution",
-      "g-recaptcha-response": recaptchaResponse
+      "g-recaptcha-response": recaptchaResponse    
     })
     .then(function(response) {
+      "success": true|false,
+      "challenge_ts": timestamp, 
+      "hostname": string,         
+      "error-codes": [...]    
       console.log('SUCCESS!', response.status, response.text);
       alert("¡Mensaje enviado correctamente!");
       document.getElementById('contact-form').reset();
