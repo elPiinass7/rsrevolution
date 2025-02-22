@@ -17,14 +17,14 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   })
   .then(function(response) {
     console.log('SUCCESS!', response.status, response.text);
-    alert("¡Mensaje enviado correctamente!");
     document.getElementById('contact-form').reset();
     grecaptcha.reset();
+    alert("¡Mensaje enviado correctamente!");
     submitButton.disabled = false; 
   }, function(error) {
     console.log('FAILED...', error);
-    alert("Ocurrió un error al enviar el mensaje.");
     grecaptcha.reset();
+    alert("Ocurrió un error al enviar el mensaje.");
     submitButton.disabled = false;
   });
 });
