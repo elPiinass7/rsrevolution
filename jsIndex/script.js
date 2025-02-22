@@ -35,25 +35,19 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSliderPosition(false);
   });
 });
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const words = ["PASIÓN", "POTENCIA", "VELOCIDAD", "CALIDAD"];
     const textElement = document.getElementById("changing-text");
     let wordIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;
-
     function typeEffect() {
         const currentWord = words[wordIndex];
         const displayText = isDeleting
             ? currentWord.substring(0, letterIndex--)
             : currentWord.substring(0, letterIndex++);
-
         textElement.innerHTML = displayText;
-
         const typeSpeed = isDeleting ? 50 : 100;
-
         if (!isDeleting && letterIndex === currentWord.length) {
             setTimeout(() => (isDeleting = true), 1000);
         } else if (isDeleting && letterIndex === 0) {
