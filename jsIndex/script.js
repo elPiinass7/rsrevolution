@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       updateSliderPosition(true);
     }
   }
-  setInterval(nextSlide, 2700);
+  setInterval(nextSlide, 2500);
   window.addEventListener("resize", () => {
     updateSliderPosition(false);
   });
