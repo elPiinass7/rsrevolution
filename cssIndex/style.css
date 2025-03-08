@@ -13,8 +13,17 @@ body {
   width: 0px;
 }
 
-nav {
-    background: linear-gradient(to left, #013bfa, #34b1ff);
+.navbar {
+  background: linear-gradient(to left, #013bfa, #34b1ff) !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav-link.has-text-white {
+  color: white !important;
 }
 
 .navbar-toggler {
