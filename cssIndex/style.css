@@ -72,6 +72,10 @@ body {
     filter: brightness(0.6);
   }  
 
+  .destacable{
+    color: #36b4fd;
+  }
+
 footer {
     background: linear-gradient(to left, #013bfa, #34b1ff); 
     margin-top: auto;
