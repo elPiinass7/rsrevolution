@@ -17,6 +17,27 @@
       })();
     </script>
 </head>
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#34b1ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia en nuestra web.",
+        "dismiss": "Entendido",
+        "link": "Más información",
+        "href": "privacidad.html"
+      }
+    })
+  });
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
