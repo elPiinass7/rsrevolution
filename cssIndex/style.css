@@ -202,8 +202,13 @@ footer .social-icons a img {
 }
 
 .email-link {
-background-color: rgba(0,0,0,0.5); 
-padding: 3px 8px;
-border-radius: 5px;
-text-decoration: none;
+    color: white !important;
+    background-color: rgba(0,0,0,0.5);
+    padding: 3px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    background-color: rgba(0,0,0,0.7);
 }
