@@ -65,12 +65,20 @@ section.bg-dark.text-white.py-4 h2.fs-3 {
     height: 100%;
   }
   
-  .btn-link {
-    color: #36b4fd;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .btn-link:hover {
-    text-decoration: underline;
-  }  
+.download-btn {
+  border: 2px solid #34b1ff;
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+
+.download-btn:hover {
+  background-color: #34b1ff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #34b1ff;
+}
