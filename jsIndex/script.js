@@ -1,3 +1,11 @@
+window.addEventListener("load", function () {
+  const loader = document.getElementById("slider-loader");
+  if (loader) {
+    loader.style.opacity = "0";
+    setTimeout(() => loader.remove(), 600);
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const sliderTrack = document.getElementById("sliderTrack");
   const slides = document.querySelectorAll(".slide");
