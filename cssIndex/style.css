@@ -14,10 +14,6 @@ body {
   width: 0px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 #slider-loader {
     position: absolute;
     top: 0;
