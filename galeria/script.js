@@ -26,8 +26,3 @@ sliders.forEach((slider) => {
     },
   });
 });
-
-AOS.init({
-  duration: 800,
-  once: true
-});
