@@ -1,10 +1,10 @@
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("tacho-loader-wrapper");
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 600);
-  });
+window.addEventListener("load", function () {
+  const loader = document.getElementById("tacho-loader-wrapper");
+  loader.style.opacity = "0";
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 600);
+});
 
 const sliders = document.querySelectorAll('.swiper-container');
 sliders.forEach((slider) => {
@@ -25,4 +25,9 @@ sliders.forEach((slider) => {
       disableOnInteraction: false,
     },
   });
+});
+
+AOS.init({
+  duration: 800,
+  once: true
 });
