@@ -19,35 +19,35 @@
       })();
     </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-  <script>
-  window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#000"
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#34b1ff"
+          }
         },
-        "button": {
-          "background": "#34b1ff"
+        "theme": "classic",
+        "content": {
+          "message": "Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia en nuestra web.",
+          "dismiss": "Entendido",
+          "link": "Más información",
+          "href": "privacidad.html"
         }
-      },
-      "theme": "classic",
-      "content": {
-        "message": "Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia en nuestra web.",
-        "dismiss": "Entendido",
-        "link": "Más información",
-        "href": "privacidad.html"
-      }
-    })
-  });
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0FLF50C05Z');
-  </script>
+      })
+    });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0FLF50C05Z');
+    </script>
 </head>
 <body>
   <img src="img/fondoSobreNosotros.webp?quality=90" alt="FondoSobreNosotros_Privacidad" class="background-image">
@@ -63,7 +63,9 @@
           <ul class="navbar-nav me-auto">
               <li class="nav-item"><a class="nav-link has-text-white" href="galeria.html">Galer&iacute;a</a></li>
               <li class="nav-item"><a class="nav-link has-text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
-              <li class="nav-item"><a class="nav-link has-text-white" href="privacidad.html">Pol&iacute;tica de Privacidad</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link has-text-white" href="privacidad.html">Pol&iacute;tica de Privacidad</a></li>
           </ul>
         </div>
       </div>
