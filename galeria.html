@@ -52,6 +52,14 @@
 </head>
 <button onclick="scrollToTop()" id="scrollTopBtn" title="Volver arriba" aria-label="Volver arriba"> ↑ </button>
 <body>
+  <div id="tacho-loader-wrapper">
+    <svg id="tacometro" viewBox="0 0 200 200" width="120" height="120">
+      <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#34b1ff" stroke-width="8"/>
+      <line id="aguja" x1="100" y1="100" x2="100" y2="30" stroke="#ff4141" stroke-width="4" stroke-linecap="round" transform="rotate(-90, 100, 100)"/>
+      <circle cx="100" cy="100" r="6" fill="#ffffff"/>
+    </svg>
+    <span class="tacho-text">Subiendo Revoluciones...</span>
+  </div>
   <nav class="navbar navbar-expand-lg position-fixed w-100">
       <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
