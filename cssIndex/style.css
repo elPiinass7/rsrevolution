@@ -66,22 +66,20 @@ body {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  z-index: 999;
+  z-index: 999999; /* SUPERIOR a todo */
   width: 48px;
   height: 48px;
-  background: linear-gradient(to bottom right, #34b1ff, #013bfa);
+  background-color: red; /* temporal para que lo veas sí o sí */
   color: white;
+  font-size: 24px;
+  font-weight: bold;
   border: none;
   border-radius: 50%;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.2s ease, opacity 0.3s ease;
+  display: flex;
 }
+
 
 #scrollTopBtn:hover {
   transform: scale(1.1);
