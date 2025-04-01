@@ -73,14 +73,17 @@ body {
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease, opacity 0.3s ease;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0;
 }
 
 #scrollTopBtn:hover {
@@ -89,11 +92,11 @@ body {
 
 @media (max-width: 576px) {
   #scrollTopBtn {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
     bottom: 20px;
     right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 
