@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "RS Revolution",
-    "url": "https://rsrevolution.es",
-    "logo": "https://rsrevolution.es/img/RS_RevAFR.webp",
-    "sameAs": [
-      "https://www.instagram.com/rsrevolution.es"
-    ],
-    "description": "RS Revolution captura la emoción del drift, los coches deportivos y el motor en general desde Valladolid. Fotografía profesional y pasión en cada imagen.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Valladolid",
-      "addressCountry": "ES"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "RS Revolution",
+      "url": "https://rsrevolution.es",
+      "logo": "https://rsrevolution.es/img/RS_RevAFR.webp",
+      "sameAs": [
+        "https://www.instagram.com/rsrevolution.es"
+      ],
+      "description": "RS Revolution captura la emoción del drift, los coches deportivos y el motor en general desde Valladolid. Fotografía profesional y pasión en cada imagen.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Valladolid",
+        "addressCountry": "ES"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "jsa.rsrevolution@gmail.com"
+      }
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "tuemail@rsrevolution.es"
+    {
+      "@type": "WebSite",
+      "@id": "https://rsrevolution.es/#website",
+      "url": "https://rsrevolution.es",
+      "name": "RS Revolution",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://rsrevolution.es"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rsrevolution.es/buscar?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://rsrevolution.es/galeria/img/img1.webp",
+      "contentUrl": "https://rsrevolution.es/galeria/img/img1.webp",
+      "name": "BMW M3 JaviSRC",
+      "description": "BMW M3 corriendo en el evento Fast and Nice 2025 en el cirtuito de Kotarr en Burgos",
+      "creator": {
+        "@type": "Person",
+        "name": "Daniel V. - RS Revolution"
+      },
+      "creditText": "RS Revolution",
+      "copyrightNotice": "© RS Revolution",
+      "license": "https://rsrevolution.es/privacidad.html",
+      "acquireLicensePage": "https://rsrevolution.es/contacto.html",
+      "datePublished": "2025-03-17",
+      "thumbnailUrl": "https://rsrevolution.es/galeria/img/img1.webp"
     }
-  }
+  ]
+}
 </script>
 <head>
   <meta charset="UTF-8">
