@@ -62,7 +62,7 @@ body {
 }
 
 #scrollTopBtn {
-  display: none;
+  display: none !important;
   position: fixed;
   bottom: 40px;
   right: 30px;
