@@ -66,7 +66,7 @@ body {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  z-index: 999;
+  z-index: 9999;
   width: 48px;
   height: 48px;
   background: linear-gradient(to bottom right, #34b1ff, #013bfa);
@@ -81,6 +81,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease, opacity 0.3s ease;
+  padding: 0;
 }
 
 #scrollTopBtn:hover {
