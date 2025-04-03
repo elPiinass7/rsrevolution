@@ -14,8 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => loader.remove(), 500);
   }
 
-  // ✅ Corrección aquí: usamos la clase personalizada para Swiper
-  const sliders = document.querySelectorAll('.galeria-swiper-container');
+  const sliders = document.querySelectorAll('.swiper-container');
   sliders.forEach((slider) => {
     new Swiper(slider, {
       effect: 'coverflow',
