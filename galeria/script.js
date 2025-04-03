@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-const sliders = document.querySelectorAll('.swiper-container');
+const sliders = document.querySelectorAll('.galeria-swiper-container');
 sliders.forEach((slider) => {
   new Swiper(slider, {
     effect: 'coverflow',
