@@ -1,74 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Explora nuestra galería con fotos permanentes y eventos recientes de motor. Imágenes de drift, coches deportivos y mucha adrenalina." />
-  <meta name="keywords"
-    content="fotografía de coches, eventos de motor, fotografía deportiva, fotos de drift, RS Revolution, rsrevolution_, fotógrafos en Valladolid, fotografía de coches en España, imágenes automovilismo, pasión por los coches, fotos de circuito, drift España, galería de fotos motor, fotos profesionales de eventos, fotografía en FK1, Instagram de fotografía de coches, coches deportivos, carreras y velocidad, fotografía creativa, fotos para Instagram" />
+  <meta name="description" content="Explora nuestra galería con fotos permanentes y eventos recientes de motor. Imágenes de drift, coches deportivos y mucha adrenalina." />
+  <meta name="keywords" content="fotografía de coches, eventos de motor, fotografía deportiva, fotos de drift, RS Revolution, rsrevolution_, fotógrafos en Valladolid, fotografía de coches en España, imágenes automovilismo, pasión por los coches, fotos de circuito, drift España, galería de fotos motor, fotos profesionales de eventos, fotografía en FK1, Instagram de fotografía de coches, coches deportivos, carreras y velocidad, fotografía creativa, fotos para Instagram" />
   <meta name="author" content="RS Revolution" />
   <title>RS Revolution - Galería</title>
   <link rel="preload" as="image" href="galeria/img/img00.webp" type="image/webp" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" media="print" onload="this.onload=null;this.media='all';" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.onload=null;this.media='all';" />
   <link rel="stylesheet" href="cssIndex/style.css" />
   <link rel="stylesheet" href="galeria/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print"
-    onload="this.onload=null;this.media='all';" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print"
-    onload="this.onload=null;this.media='all';" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" media="print"
-    onload="this.onload=null;this.media='all';" />
-  <link rel="shortcut icon" href="img/RS_RevICO.ico" type="image/x-icon" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "ImageObject",
-          "@id": "https://rsrevolution.es/galeria/img/img00.webp",
-          "contentUrl": "https://rsrevolution.es/galeria/img/img00.webp",
-          "name": "M3 de Javi SRC, Vanette Fast and Nice y Honda Civic",
-          "description": "M3 de Javi SRC cruzando en curva junto a Nissan Vanette y Honda Civic durante el evento Fast and Nice en el circuito de Kotarr",
-          "creator": { "@type": "Person", "name": "D.V. - RS Revolution" },
-          "creditText": "RS Revolution",
-          "copyrightNotice": "© RS Revolution",
-          "license": "https://rsrevolution.es/privacidad.html",
-          "acquireLicensePage": "mailto:jsa.rsrevolution@gmail.com",
-          "datePublished": "2025-03-17",
-          "thumbnailUrl": "https://rsrevolution.es/galeria/img/img00.webp"
-        },
-        {
-          "@type": "ImageObject",
-          "@id": "https://rsrevolution.es/galeria/img/Portada_VolraceClubs2025.webp",
-          "contentUrl": "https://rsrevolution.es/galeria/img/Portada_VolraceClubs2025.webp",
-          "name": "Mercedes AMG GT naranja Volrace Clubs 2025",
-          "description": "Portada de Mercedes AMG GT con carrocería naranja con el logo del evento de Volrace Clubs 2025 en circuito de Jarama",
-          "creator": { "@type": "Person", "name": "D.V. - RS Revolution" },
-          "creditText": "RS Revolution",
-          "copyrightNotice": "© RS Revolution",
-          "license": "https://rsrevolution.es/privacidad.html",
-          "acquireLicensePage": "mailto:jsa.rsrevolution@gmail.com",
-          "datePublished": "2025-03-17",
-          "thumbnailUrl": "https://rsrevolution.es/galeria/img/Portada_VolraceClubs2025.webp"
-        },
-        {
-          "@type": "ImageObject",
-          "@id": "https://rsrevolution.es/galeria/img/img6.webp",
-          "contentUrl": "https://rsrevolution.es/galeria/img/img6.webp",
-          "name": "Sesión de fotos Maserati Ghibli Q4s y Mercedes SLK 55 AMG",
-          "description": "Sesión profesional de fotografía a un Maserati Ghibli Q4s y un Mercedes SLK 55 AMG en localización estática",
-          "creator": { "@type": "Person", "name": "D.V. - RS Revolution" },
-          "creditText": "RS Revolution",
-          "copyrightNotice": "© RS Revolution",
-          "license": "https://rsrevolution.es/privacidad.html",
-          "acquireLicensePage": "https://rsrevolution.es/condiciones.html",
-          "datePublished": "2025-03-17",
-          "thumbnailUrl": "https://rsrevolution.es/galeria/img/img6.webp"
-        }
-      ]
+  <style>
+    html, body {
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
     }
-  </script>
+  </style>
+  <link rel="shortcut icon" href="img/RS_RevICO.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
   <script>
@@ -102,8 +54,15 @@
     });
   </script>
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="application/ld+json">
+    { "@context": "https://schema.org", "@graph": [
+      { "@type": "ImageObject", "@id": "https://rsrevolution.es/galeria/img/img00.webp", "contentUrl": "https://rsrevolution.es/galeria/img/img00.webp", "name": "M3 de Javi SRC, Vanette Fast and Nice y Honda Civic", "description": "M3 de Javi SRC cruzando en curva junto a Nissan Vanette y Honda Civic durante el evento Fast and Nice en el circuito de Kotarr", "creator": { "@type": "Person", "name": "D.V. - RS Revolution" }, "creditText": "RS Revolution", "copyrightNotice": "© RS Revolution", "license": "https://rsrevolution.es/privacidad.html", "acquireLicensePage": "mailto:jsa.rsrevolution@gmail.com", "datePublished": "2025-03-17", "thumbnailUrl": "https://rsrevolution.es/galeria/img/img00.webp" },
+      { "@type": "ImageObject", "@id": "https://rsrevolution.es/galeria/img/Portada_VolraceClubs2025.webp", "contentUrl": "https://rsrevolution.es/galeria/img/Portada_VolraceClubs2025.webp", "name": "Mercedes AMG GT naranja Volrace Clubs 2025", "description": "Portada de Mercedes AMG GT con carrocería naranja con el logo del evento de Volrace Clubs 2025 en circuito de Jarama", "creator": { "@type": "Person", "name": "D.V. - RS Revolution" }, "creditText": "RS Revolution", "copyrightNotice": "© RS Revolution", "license": "https://rsrevolution.es/privacidad.html", "acquireLicensePage": "mailto:jsa.rsrevolution@gmail.com", "datePublished": "2025-03-17", "thumbnailUrl": "https://rsrevolution.es/galeria/img/Portada_VolraceClubs2025.webp" },
+      { "@type": "ImageObject", "@id": "https://rsrevolution.es/galeria/img/img6.webp", "contentUrl": "https://rsrevolution.es/galeria/img/img6.webp", "name": "Sesión de fotos Maserati Ghibli Q4s y Mercedes SLK 55 AMG", "description": "Sesión profesional de fotografía a un Maserati Ghibli Q4s y un Mercedes SLK 55 AMG en localización estática", "creator": { "@type": "Person", "name": "D.V. - RS Revolution" }, "creditText": "RS Revolution", "copyrightNotice": "© RS Revolution", "license": "https://rsrevolution.es/privacidad.html", "acquireLicensePage": "https://rsrevolution.es/condiciones.html", "datePublished": "2025-03-17", "thumbnailUrl": "https://rsrevolution.es/galeria/img/img6.webp" }
+    ] }
+  </script>
 </head>
-
+  
 <body>
   <button aria-label="Volver arriba" id="scrollTopBtn" onclick="scrollToTop()" title="Volver arriba"> ↑ </button>
   <div id="tacho-loader-wrapper">
@@ -306,6 +265,5 @@
     });
   </script>
   <script async defer src="https://www.google.com/recaptcha/api.js"></script>
-</body>
-
+  </body>
 </html>
