@@ -56,7 +56,7 @@ section.bg-dark.text-white.py-4 h2.fs-3 {
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: fixed; 
     border-radius: 10px;
 }
 
