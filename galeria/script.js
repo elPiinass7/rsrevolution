@@ -13,25 +13,26 @@ document.addEventListener("DOMContentLoaded", function () {
     loader.style.pointerEvents = "none";
     setTimeout(() => loader.remove(), 500);
   }
-});
 
-const sliders = document.querySelectorAll('.galeria-swiper-container');
-sliders.forEach((slider) => {
-  new Swiper(slider, {
-    effect: 'coverflow',
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false,
-    },
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+  // ✅ Corrección aquí: usamos la clase personalizada para Swiper
+  const sliders = document.querySelectorAll('.galeria-swiper-container');
+  sliders.forEach((slider) => {
+    new Swiper(slider, {
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
   });
 });
