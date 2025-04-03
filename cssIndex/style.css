@@ -11,7 +11,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
 }
 
 #slider-loader {
@@ -62,44 +62,43 @@ body {
 }
 
 #scrollTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
-  z-index: 9999;
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(to bottom right, #34b1ff, #013bfa);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease, opacity 0.3s ease;
-  padding: 0;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(to bottom right, #34b1ff, #013bfa);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    padding: 0;
 }
 
 #scrollTopBtn:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @media (max-width: 576px) {
-  #scrollTopBtn {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    bottom: 20px;
-    right: 12px;
-  }
+    #scrollTopBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 12px;
+    }
 }
 
 .nav-link.has-text-white {
-  color: white !important;
+    color: white !important;
 }
 
 .navbar-toggler {
@@ -109,59 +108,73 @@ body {
 .text-center {
     margin-top: 50px;
     margin-bottom: 50px;
-
 }
 
 :root {
     --slider-gap: clamp(10px, 2.5vw, 25px);
     --slide-width: calc((100% - 2 * var(--slider-gap)) / 2);
-  }
+}
 
 .slider-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  min-height: 400px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 400px;
 }
 
 .slider-track {
-  display: flex;
-  gap: var(--slider-gap);
-  transition: transform 0.5s ease;
-  will-change: transform;
-  padding: 20px 0;
+    display: flex;
+    gap: var(--slider-gap);
+    transition: transform 0.5s ease;
+    will-change: transform;
+    padding: 20px 0;
 }
 
 .slide {
-  flex-shrink: 0;
-  width: var(--slide-width);
-  position: relative;
-  aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    width: var(--slide-width);
+    position: relative;
+    aspect-ratio: 1 / 1;
 }
 
 .slide img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  display: block;
-  border-radius: 23.33px;
-  transition: transform 0.5s ease, filter 0.5s ease;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
+    border-radius: 23.33px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .slide.active img {
-  transform: scale(1);
-  filter: brightness(1.1);
+    transform: scale(1);
+    filter: brightness(1.1);
 }
 
 .slide:not(.active) img {
-  transform: scale(0.8);
-  filter: brightness(0.6);
-} 
+    transform: scale(0.8);
+    filter: brightness(0.6);
+}
 
-  .destacable{
-    color: #36b4fd;
-  }
+@media (max-width: 480px) {
+    .slider-container {
+        min-height: 300px;
+    }
+    
+    .slide img {
+        border-radius: 18px;
+    }
+    
+    .slide:not(.active) img {
+            transform: scale(0.8);
+            filter: brightness(0.6);
+        }
+    }
+    
+    .destacable {
+        color: #36b4fd;
+}
 
 footer {
     background: linear-gradient(to left, #013bfa, #34b1ff); 
@@ -208,59 +221,59 @@ footer ul li a:hover {
 }
 
 footer .contact-form {
-  max-width: 350px;            
-  margin: 20px auto;           
-  padding: 15px;               
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    max-width: 350px;            
+    margin: 20px auto;           
+    padding: 15px;               
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 footer .contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 footer .contact-form input,
-footer .contact-form textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-size: 14px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
+    footer .contact-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
 
 footer .contact-form input:focus,
-footer .contact-form textarea:focus {
-  border-color: #2caeff;
-}
+    footer .contact-form textarea:focus {
+        border-color: #2caeff;
+    }
 
 footer .contact-form input::placeholder,
-footer .contact-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
+    footer .contact-form textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
 
 footer .contact-form button {
-  width: 100%;
-  background-color: #2caeff;
-  border: none;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    width: 100%;
+    background-color: #2caeff;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 footer .contact-form button:hover {
-  background-color: #011efa;
+    background-color: #011efa;
 }
 
 footer .social-icons {
