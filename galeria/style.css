@@ -45,72 +45,42 @@ section.bg-dark.text-white.py-4 h2.fs-3 {
   margin-bottom: 1.5rem;
 }
 
-/* GALERÍA DE SLIDERS TEMPORALES */
-
-.galeria-slider-container {
-  margin: 2rem auto; /* Espacio arriba y abajo */
-  padding: 0.8rem;
-  background-color: #000;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+.swiper-container {
+  width: 100%;
   max-width: 300px;
   aspect-ratio: 1 / 1;
+  margin: 1rem auto;
+  border-radius: 12px;
+  background-color: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.galeria-swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.galeria-swiper-wrapper {
-  display: flex;
-  height: 100%;
-}
-
-.galeria-swiper-slide {
-  width: 100%;
-  height: 100%;
+.swiper-slide {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.galeria-swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1;
-  display: block;
+  object-fit: cover;
   border-radius: 10px;
+  display: block;
 }
 
-.download-btn {
-  border: 2px solid #34b1ff;
-  color: #ffffff;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-radius: 25px;
-  padding: 10px 25px;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.download-btn:hover {
-  background-color: #34b1ff;
-  color: #000;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #34b1ff;
-}
-
-/* Responsive */
 @media (max-width: 576px) {
-  .galeria-slider-container {
+  .slider-container {
     max-width: 90vw;
     margin: 1.5rem auto;
     padding: 0.6rem;
