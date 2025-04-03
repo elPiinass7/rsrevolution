@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loader.style.pointerEvents = "none";
     setTimeout(() => loader.remove(), 500);
   }
+});
 
 const sliders = document.querySelectorAll('.swiper-container');
 sliders.forEach((slider) => {
