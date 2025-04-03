@@ -6,6 +6,15 @@ window.addEventListener("load", function () {
   }, 600);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("tacho-loader-wrapper");
+  if (loader) {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+    setTimeout(() => loader.remove(), 500);
+  }
+});
+
 const sliders = document.querySelectorAll('.swiper-container');
 sliders.forEach((slider) => {
   new Swiper(slider, {
