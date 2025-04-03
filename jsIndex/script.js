@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSliderPosition(false);
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     const words = ["PASIÓN", "POTENCIA", "VELOCIDAD", "CALIDAD"];
     const textElement = document.getElementById("changing-text");
@@ -65,4 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(typeEffect, typeSpeed);
     }
     typeEffect();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("slider-loader");
+  if (loader) {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+    setTimeout(() => loader.remove(), 500); // lo quita del DOM
+  }
 });
