@@ -7,24 +7,23 @@ window.addEventListener("load", function () {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const sliders = document.querySelectorAll('.swiper-container');
-  sliders.forEach((slider) => {
-    new Swiper(slider, {
-      effect: 'coverflow',
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-      },
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    });
+  const swipers = document.querySelectorAll('.swiper-container');
+  
+  swipers.forEach((swiperElement) => {
+      new Swiper(swiperElement, {
+          loop: true,
+          autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+      });
   });
 });
