@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const sliders = document.querySelectorAll('.slider-container-galeria');
+  const sliders = document.querySelectorAll('.swiper-container');
   sliders.forEach((slider) => {
     new Swiper(slider, {
       effect: 'coverflow',
