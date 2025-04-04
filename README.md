@@ -9,5 +9,4 @@ El usuario o cliente podrá acceder a nuestras redes sociales y ver algunas de n
 se incluye un apartado de contacto para poder mandar un email a la dirección jsa.rsrevolution@gmail.com para poder contactar con nosotros
 o para pedir alguna edición adicional a alguna fotografía temporal que deseen y que no tenga ningún tipo de edición (cruda).
 
-Añadir a todo, que las fotografías descargables aún no cuentan con marca de agua y que en un futuro (2026) se incluirá para "monetizar" el trabajo
-y así poder seguir con el proyecto. Gracias por leer esto y apoyar el trabajo de la fotografía y programación ;D.
+Gracias por leer esto y apoyar el trabajo de la fotografía y programación ;D.
