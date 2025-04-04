@@ -1,124 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Sobre Nosotros - RS Revolution",
+  "url": "https://rsrevolution.es/sobreNosotros.html",
+  "description": "RS Revolution es una iniciativa especializada en fotografía del mundo del motor desde Valladolid. Captura la velocidad, la potencia y la pasión en cada imagen.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "RS Revolution",
+    "url": "https://rsrevolution.es",
+    "logo": "https://rsrevolution.es/img/RS_RevAFR.webp"
+  }
+}
+</script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Desde Valladolid, RS Revolution transmite la emoción del motor a través de fotografía profesional. Conoce nuestra pasión y enfoque.">
-  <meta name="keywords" content="fotografía de coches, eventos de motor, fotografía deportiva, fotos de drift, RS Revolution, rsrevolution_, fotógrafos en Valladolid, fotografía de coches en España, imágenes automovilismo, pasión por los coches, fotos de circuito, drift España, galería de fotos motor, fotos profesionales de eventos, fotografía en FK1, Instagram de fotografía de coches, coches deportivos, carreras y velocidad, fotografía creativa, fotos para Instagram">
+  <meta name="description" content="Desde Valladolid, RS Revolution transmite la emoci&oacute;n del motor a trav&eacute;s de fotograf&iacute;a profesional. Conoce nuestra pasi&oacute;n y enfoque.">
+  <meta name="keywords" content="fotograf&iacute;a de coches, eventos de motor, fotograf&iacute;a deportiva, fotos de drift, RS Revolution, rsrevolution_, fot&oacute;grafos en Valladolid, fotograf&iacute;a de coches en Espa&ntilde;a, im&aacute;genes automovilismo, pasi&oacute;n por los coches, fotos de circuito, drift Espa&ntilde;a, galer&iacute;a de fotos motor, fotos profesionales de eventos, fotograf&iacute;a en FK1, Instagram de fotograf&iacute;a de coches, coches deportivos, carreras y velocidad, fotograf&iacute;a creativa, fotos para Instagram">
   <meta name="author" content="RS Revolution">
   <title>RS Revolution - Sobre Nosotros</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="cssIndex/style.css">
   <link rel="stylesheet" href="sobreNosotros_Privacidad/style.css">
   <link rel="shortcut icon" href="img/RS_RevICO.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("FLCvsaSBa0Fl16g8S");
+    })();
+  </script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
   <script>
-    window.addEventListener("load", function() {
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": { "background": "#000" },
-          "button": { "background": "#34b1ff" }
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
         },
-        "theme": "classic",
-        "content": {
-          "message": "Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia en nuestra web.",
-          "dismiss": "Entendido",
-          "link": "Más información",
-          "href": "privacidad.html"
+        "button": {
+          "background": "#34b1ff"
         }
-      });
-    });
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Utilizamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia en nuestra web.",
+        "dismiss": "Entendido",
+        "link": "Más información",
+        "href": "privacidad.html"
+      }
+    })
+  });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-0FLF50C05Z');
   </script>
 </head>
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Volver arriba" aria-label="Volver arriba"> ↑ </button>
 <body>
   <img src="img/fondoSobreNosotros.webp?quality=90" alt="Foto de fondo Valladolid" class="background-image">
-  <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg position-fixed w-100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://rsrevolution.es/">
-        <img src="img/RS_RevAFR.webp?quality=65" alt="Logo de RS Revolution" width="75" height="75">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="privacidad.html">Política de Privacidad</a></li>
-        </ul>
+          <a class="navbar-brand" href="https://rsrevolution.es/">
+              <img src="img/RS_RevAFR.webp?quality = 65" alt="Logo de RS Revolution" width="75" height="75">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link has-text-white" href="galeria.html">Galer&iacute;a</a></li>
+              <li class="nav-item"><a class="nav-link has-text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link has-text-white" href="privacidad.html">Pol&iacute;tica de Privacidad</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <header class="text-center py-5 mt-5">
-    <h1 class="text-white">Sobre Nosotros</h1>
+    </nav>
+  <header class="text-center py-5">
+    <h1 class="title has-text-white">Sobre Nosotros</h1>
   </header>
-  <main class="container my-5">
+  <main class="justify-content-center container">
     <section class="about-us text-center position-relative">
-      <div class="overlay"></div>
-      <div class="content">
-        <p class="subtitle text-white text-start">
-          RS Revolution es una iniciativa especializada en la fotografía del mundo del motor. Desde Valladolid, se captura la esencia de la velocidad, la potencia y la pasión por la competición y la automoción...
-        </p>
-      </div>
+        <div class="overlay"></div>
+        <div class="content">
+            <p class="subtitle has-text-white" style="text-align: left;">
+                RS Revolution es una iniciativa especializada en la fotograf&iacute;a del mundo del motor. Desde Valladolid, se captura la esencia de la velocidad, la potencia y la pasi&oacute;n por la competici&oacute;n y la automoci&oacute;n. Cada imagen busca ir m&aacute;s all&aacute; de una simple fotograf&iacute;a, transmitiendo la emoci&oacute;n de cada momento con un enfoque &uacute;nico y detallado.
+                <br><br>
+                Con una visi&oacute;n clara y precisa, RS Revolution destaca por su habilidad para capturar la esencia de cada evento y veh&iacute;culo. Cada fotograf&iacute;a refleja la intensidad de las carreras y los detalles que dan vida a los coches, transformando momentos fugaces en im&aacute;genes llenas de historia y emoci&oacute;n.
+                <br><br>
+                Con un estilo limpio y directo, el objetivo es ofrecer im&aacute;genes que hablen por s&iacute; solas, sin artificios ni excesos, pero con la fuerza suficiente para trasladar la adrenalina de la pista a cada captura.
+            </p>
+        </div>
     </section>
   </main>
-  <footer class="text-white" style="background: linear-gradient(to left, #013bfa, #34b1ff);">
+  <footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;">
     <div class="container">
       <div class="row align-items-center" style="min-height: 300px;">
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-          <h4>Síguenos</h4>
-          <div class="d-flex gap-3 mb-3">
-            <a href="https://instagram.com/rsrevolution_" target="_blank"><img src="img/instagram.webp" width="40" height="40"></a>
-            <a href="https://tiktok.com/@rsrevolution_" target="_blank"><img src="img/tiktok.webp" width="40" height="40"></a>
-            <a href="https://x.com/rsrevolution_" target="_blank"><img src="img/x.webp" width="40" height="40"></a>
+          <h4>S&iacute;guenos</h4>
+          <div class="social-icons d-flex gap-3 mb-3">
+            <a href="https://instagram.com/rsrevolution_" target="_blank">
+              <img src="img/instagram.webp" alt="Logo de Instagram de @rsrevolution_" width="40" height="40">
+            </a>
+            <a href="https://tiktok.com/@rsrevolution_" target="_blank">
+              <img src="img/tiktok.webp" alt="Logo de TikTok de @rsrevolution_" width="40" height="40">
+            </a>
+            <a href="https://x.com/rsrevolution_" target="_blank">
+              <img src="img/x.webp" alt="Logo de X de @rsrevolution_" width="40" height="40">
+            </a>
           </div>
-          <hr class="w-50">
-          <p class="mt-3" style="max-width: 400px; text-align: justify;">
-            <strong>Condiciones de uso de las imágenes</strong><br>
-            Todas las fotografías publicadas en este sitio web son propiedad de RS Revolution (D.V.).<br>
-            No está permitido el uso comercial, reproducción o modificación de las imágenes sin autorización previa.<br>
-            <a href="https://rsrevolution.es/condiciones.html" class="text-white text-decoration-underline"> Ver todos los términos y condiciones </a>
+          <hr class="w-50" />
+          <p class="has-text-white mt-3" style="max-width: 400px; text-align: justify;">
+            <strong>Condiciones de uso de las im&aacute;genes</strong><br>
+            Todas las fotograf&iacute;as publicadas en este sitio web son propiedad de RS Revolution (D.V.).<br>
+            No est&aacute; permitido el uso comercial, reproducci&oacute;n o modificación de las im&aacute;genes sin autorizaci&oacute;n previa.<br>
+            <a href="https://rsrevolution.es/condiciones.html" style="text-decoration: underline;"> Ver todos los t&eacute;rminos y condiciones </a>
           </p>
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
           <h2>Contacto</h2>
-          <form id="contact-form">
-            <div class="mb-2">
-              <label for="name" class="form-label">Nombre:</label>
-              <input type="text" id="name" name="from_name" required class="form-control">
-            </div>
-            <div class="mb-2">
-              <label for="email" class="form-label">Correo:</label>
-              <input type="email" id="email" name="reply_to" required class="form-control">
-            </div>
-            <div class="mb-2">
-              <label for="message" class="form-label">Mensaje:</label>
-              <textarea id="message" name="message" required class="form-control"></textarea>
-            </div>
-            <div class="g-recaptcha mb-2" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-"></div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+          <form id="contact-form" class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="from_name" required>
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="reply_to" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="g-recaptcha" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-"></div>
+            <button type="submit" class="mt-3">Enviar</button>
           </form>
         </div>
       </div>
     </div>
     <hr>
-    <h6 class="text-center"> &copy; <script>document.write(new Date().getFullYear());</script> RS Revolution </h6>
+    <h6 class="text-center has-text-white justify-content-center align-items-center mx-auto"> &copy; <script>document.write(new Date().getFullYear());</script> RS Revolution </h6>
     <hr>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="jsIndex/jsIndex/rendimientoFormCap.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="jsIndex/jsIndex/rendimientoFormCap.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script src="galeria/script.js" defer></script>
-  <script src="jsIndex/scriptSubir.js" defer></script>
-  <script src="jsIndex/scriptFormulario.js" defer></script>
+  <script src="galeria/script.js"></script>
+  <script src="jsIndex/scriptSubir.js"></script>
+  <script src="jsIndex/scriptFormulario.js"></script>
 </body>
 </html>
