@@ -1,16 +1,62 @@
-<?xml version="1.0" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://rsrevolution.es/</loc>
     <lastmod>2025-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/RS_RevAFR.webp</image:loc>
+      <image:title>Logo de RS Revolution</image:title>
+      <image:caption>Logo oficial de RS Revolution</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rsrevolution.es/galeria.html</loc>
     <lastmod>2025-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img1.webp</image:loc>
+      <image:title>BMW M3 en Fast and Nice en Kotarr 2025</image:title>
+      <image:caption>BMW M3 en Fast and Nice en Kotarr 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img2.webp</image:loc>
+      <image:title>Mercedes AMG GT en Volrace Clubs (Jarama 2025)</image:title>
+      <image:caption>Mercedes AMG GT Carrera en Volrace Clubs en el Jarama en Madrid 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img3.webp</image:loc>
+      <image:title>Renault 5 Michelín en Clásicos de Aldeamayor 2025</image:title>
+      <image:caption>Renault 5 Michelín en los Clásicos de Aldeamayor 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img4.webp</image:loc>
+      <image:title>BMW E36 derrapando en Kotarr 2025</image:title>
+      <image:caption>BMW E36 derrapando en Fast and Nice en Kotarr 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img5.webp</image:loc>
+      <image:title>Lamborghini Huracán en Volrace Clubs (Jarama 2025)</image:title>
+      <image:caption>Lamborghini Huracán en Volrace Clubs en el Jarama en Madrid 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img6.webp</image:loc>
+      <image:title>Nissan Silvia S14 derrapando en Kotarr</image:title>
+      <image:caption>Nissan Silvia Rojo derrapando en Fast and Nice en Kotarr 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img7.webp</image:loc>
+      <image:title>BMW 628i (1980) en Clásicos de Aldeamayor</image:title>
+      <image:caption>BMW 628i de 1980 en los Clásicos de Aldeamayor 2025</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rsrevolution.es/img/img8.webp</image:loc>
+      <image:title>Nissan Skyline R34 en Volrace Clubs (Jarama)</image:title>
+      <image:caption>Nissan GTR Skyline R34 en Volrace Clubs en el Jarama en Madrid 2025</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rsrevolution.es/sobreNosotros.html</loc>
