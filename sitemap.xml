@@ -7,7 +7,6 @@
             http://www.google.com/schemas/sitemap-image/1.1
             http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
   
-  <!-- Página principal -->
   <url>
     <loc>https://rsrevolution.es/</loc>
     <lastmod>2025-04-02</lastmod>
@@ -49,9 +48,7 @@
       <image:loc>https://rsrevolution.es/img/img8.webp</image:loc>
       <image:title>Nissan Skyline R34 en Volrace Clubs (Jarama) - Nissan GTR Skyline R34 en Volrace Clubs en el Jarama en Madrid 2025</image:title>
     </image:image>
-  </url>
-  
-  <!-- Página galería -->
+  </url> 
   <url>
     <loc>https://rsrevolution.es/galeria.html</loc>
     <lastmod>2025-04-02</lastmod>
