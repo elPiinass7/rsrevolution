@@ -312,36 +312,3 @@ footer .social-icons a img {
 .email-link:hover {
     background-color: rgba(0,0,0,0.7);
 }
-
-.slider-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px 60px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .slider-section {
-        padding: 20px 15px 40px;
-    }
-
-    .slider-container {
-        min-height: 250px;
-    }
-
-    .dynamic-text {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-    }
-
-    .text-center {
-        margin-top: 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .slider-container {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-}
