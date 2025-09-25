@@ -119,7 +119,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .slider-track {
