@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactFormBtn = document.getElementById('modal-contact-form-btn');
     const choiceView = document.getElementById('modal-choice-view');
     const contactView = document.getElementById('modal-contact-view');
+    
     downloadModal.addEventListener('show.bs.modal', function (event) {
       const triggerButton = event.relatedTarget;
       if (triggerButton) {
@@ -27,6 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
       if (choiceView) choiceView.style.display = 'block';
       if (contactView) contactView.style.display = 'none';
     });
+    
+    if (modalDownloadButton) {
+      modalDownloadButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = modalDownloadButton.href;
+        if (href && href !== '#') {
+          window.open(href, '_blank');
+        }
+        const modalInstance = bootstrap.Modal.getInstance(downloadModal);
+        if (modalInstance) {
+          modalInstance.hide();
+        }
+      });
+    }
+    
     if (showContactButton) {
       showContactButton.addEventListener('click', () => {
         if (choiceView) choiceView.style.display = 'none';
