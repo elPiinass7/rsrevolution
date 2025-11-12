@@ -421,14 +421,12 @@
                 loading="lazy"
               />
               <div class="text-center my-3" data-aos="fade-up">
-                <a
-                  class="btn btn-outline-light download-btn"
-                  href="https://rsrevolution.es"
-                  target="_blank"
-                >
-                  📥 Próximamente
-                </a>
-              </div>
+              <a
+                class="btn btn-outline-light download-btn"
+                href="#" data-bs-toggle="modal" data-bs-target="#downloadModal" data-drive-link="https://rsrevolution.es" >
+                📥 Próximamente
+              </a>
+            </div>
             </div>
             <div class="col-md-4 text-center">
               <img
@@ -605,6 +603,46 @@
         </div>
       </section>
     </main>
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="downloadModalLabel">Opciones de Descarga</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div id="modal-choice-view">
+              <p class="text-center">Elige el tipo de descarga que prefieres:</p>
+              
+              <a id="modal-download-watermark" href="#" target="_blank" class="btn btn-outline-light download-btn w-100 mb-3" data-bs-dismiss="modal">
+                Con Marca de Agua (Gratis)
+              </a>
+              
+              <button id="modal-show-contact" class="btn btn-success w-100">
+                Sin Marca de Agua (Contacto)
+              </button>
+            </div>
+            
+            <div id="modal-contact-view" style="display: none;">
+              <p>¡Genial! Para obtener tus fotos en alta calidad y sin marca de agua, por favor, contacta conmigo a través de uno de estos métodos:</p>
+              
+              <a href="https://instagram.com/rsrevolution_" target="_blank" class="btn btn-contact-insta w-100 mb-3">
+                <img src="img/instagram.webp" alt="Instagram"> Contactar por Instagram
+              </a>
+              
+              <button id="modal-contact-form-btn" class="btn btn-light w-100 mb-3">
+                Ir al Formulario de Contacto
+              </button>
+              
+              <button id="modal-back-button" class="btn btn-outline-secondary w-100 mt-2">
+                &larr; Volver
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer
       style="
         background: linear-gradient(to left, #013bfa, #34b1ff);
@@ -710,9 +748,3 @@
     <script async defer src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
-
-
-
-
-
-
