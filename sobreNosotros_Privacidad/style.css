@@ -4,6 +4,12 @@ body {
     background-color: transparent;
 }
 
+h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
 .background-image {
     position: fixed;
     top: 0;
@@ -39,4 +45,5 @@ body {
 footer {
     position: relative;
     z-index: 1;
+
 }
