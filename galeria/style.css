@@ -119,3 +119,9 @@ section.bg-dark.text-white.py-4 h2.fs-3 {
   margin-right: 10px;
   vertical-align: text-bottom;
 }
+
+h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
