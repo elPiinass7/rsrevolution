@@ -125,6 +125,56 @@ h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
 .navbar-toggler {
     margin-left: auto;
 }
+
+
+
+.racing-banner {
+    background: linear-gradient(135deg, #013bfa 0%, #34b1ff 100%);
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    transform: skewY(-1deg);
+    margin: 20px 0;
+}
+
+.racing-banner .container {
+    transform: skewY(1deg);
+}
+
+.btn-racing {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-racing:hover {
+    transform: scale(1.1) rotate(-2deg);
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #34b1ff !important;
+}
+
+.racing-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+
+
+
+
 #scrollTopBtn {
     display: none;
     position: fixed;
@@ -282,4 +332,5 @@ footer .social-icons a img {
     width: 40px;
     height: 40px;
 }
+
 
