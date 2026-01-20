@@ -128,47 +128,35 @@ h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
 
 
 
-.racing-banner {
-    background: linear-gradient(135deg, #013bfa 0%, #34b1ff 100%);
-    padding: 40px 20px;
-    position: relative;
-    overflow: hidden;
-    transform: skewY(-1deg);
-    margin: 20px 0;
+
+
+.downloads-section {
+    background-color: #000;
+    padding: 80px 0;
 }
 
-.racing-banner .container {
-    transform: skewY(1deg);
+.racing-card {
+    background: linear-gradient(135deg, rgba(1, 59, 250, 0.8) 0%, rgba(52, 177, 255, 0.8) 100%);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
-.btn-racing {
+.btn-glow {
+    background-color: #fff !important;
+    color: #013bfa !important;
+    box-shadow: 0 0 20px rgba(52, 177, 255, 0.6);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
 
-.btn-racing:hover {
-    transform: scale(1.1) rotate(-2deg);
+.btn-glow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(52, 177, 255, 0.9);
     background-color: #000 !important;
     color: #fff !important;
-    border-color: #34b1ff !important;
-}
-
-.racing-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: repeating-linear-gradient(
-        60deg,
-        rgba(255, 255, 255, 0.05) 0px,
-        rgba(255, 255, 255, 0.05) 20px,
-        transparent 20px,
-        transparent 40px
-    );
 }
 
 
@@ -332,5 +320,6 @@ footer .social-icons a img {
     width: 40px;
     height: 40px;
 }
+
 
 
