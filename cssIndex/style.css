@@ -374,3 +374,33 @@ footer .social-icons a img {
 .footer-column-box .form-control::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
+/* --- MEJORA FINAL FOOTER --- */
+.footer-column-box {
+    background: rgba(0, 0, 0, 0.5); /* Más oscuro para que el texto brille */
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    color: #36b4fd !important; /* Usamos tu color destacable */
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(54, 180, 253, 0.3);
+    padding-bottom: 5px;
+}
+
+/* Para que el reCAPTCHA no se vea tan "tocho" */
+.g-recaptcha {
+    transform: scale(0.85); /* Lo reducimos un pelín para que no sea tan cuadrado */
+    transform-origin: 0 0;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
