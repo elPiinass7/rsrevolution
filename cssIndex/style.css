@@ -309,3 +309,50 @@ footer .social-icons a img {
     width: 40px;
     height: 40px;
 }
+
+
+
+
+
+
+
+/* Estilo para las cajas del footer */
+.footer-column-box {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Títulos con tu color destacable */
+.footer-title {
+    color: #ffffff !important;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+/* Estilo para los inputs del formulario */
+.contact-form .form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: #fff !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Centrar el captcha y evitar que se corte */
+.g-recaptcha {
+    display: inline-block;
+    max-width: 100%;
+}
