@@ -192,22 +192,21 @@
 
     
 
-<footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;" class="py-5">
+<footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;" class="pt-5 pb-2">
   <div class="container">
     <div class="row gy-4 align-items-stretch">
       
       <div class="col-md-4">
         <div class="footer-column-box text-center">
           <h4 class="footer-title">SÍGUENOS</h4>
-          <div class="social-icons d-flex justify-content-center gap-3 mb-4">
-            <a href="https://instagram.com/rsrevolution_" target="_blank"><img src="img/instagram.webp" width="40" alt="Instagram"></a>
-            <a href="https://tiktok.com/@rsrevolution_" target="_blank"><img src="img/tiktok.webp" width="40" alt="TikTok"></a>
-            <a href="https://x.com/rsrevolution_" target="_blank"><img src="img/x.webp" width="40" alt="X"></a>
+          <div class="social-icons d-flex justify-content-center gap-3 mb-3">
+            <a href="https://instagram.com/rsrevolution_" target="_blank"><img src="img/instagram.webp" width="35" alt="Instagram"></a>
+            <a href="https://tiktok.com/@rsrevolution_" target="_blank"><img src="img/tiktok.webp" width="35" alt="TikTok"></a>
+            <a href="https://x.com/rsrevolution_" target="_blank"><img src="img/x.webp" width="35" alt="X"></a>
           </div>
-          <p class="is-size-7" style="text-align: justify; line-height: 1.4;">
+          <p class="is-size-7" style="text-align: justify; opacity: 0.9;">
             Todas las fotografías publicadas son propiedad de RS Revolution (D.V.). Prohibido su uso comercial sin permiso.
           </p>
-          <a href="condiciones.html" class="is-size-7" style="color: #fff; text-decoration: underline;">Términos y condiciones</a>
         </div>
       </div>
 
@@ -215,25 +214,24 @@
         <div class="footer-column-box text-center">
           <h4 class="footer-title">NAVEGACIÓN</h4>
           <ul class="footer-links is-size-6" style="list-style: none; padding: 0; line-height: 2.2;">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="index.html" class="has-text-white">Inicio</a></li>
+            <li><a href="galeria.html" class="has-text-white">Galería</a></li>
+            <li><a href="eventos.html" class="has-text-white">Eventos</a></li>
+            <li><a href="sobreNosotros.html" class="has-text-white">Sobre nosotros</a></li>
+            <li><a href="privacidad.html" class="has-text-white">Privacidad</a></li>
           </ul>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="footer-column-box">
-          <h4 class="footer-title d-block text-center">CONTACTO</h4>
-          <form id="contact-form">
+          <h4 class="footer-title">CONTACTO</h4>
+          <form id="contact-form" class="w-100">
             <input type="text" placeholder="Nombre" class="form-control form-control-sm mb-2" style="background: rgba(255,255,255,0.1); border: 1px solid #fff; color: #fff;">
             <input type="email" placeholder="Correo" class="form-control form-control-sm mb-2" style="background: rgba(255,255,255,0.1); border: 1px solid #fff; color: #fff;">
-            <textarea placeholder="Mensaje" class="form-control form-control-sm mb-2" rows="2" style="background: rgba(255,255,255,0.1); border: 1px solid #fff; color: #fff;"></textarea>
             
-            <div class="d-flex justify-content-center">
-              <div class="g-recaptcha" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark" data-size="compact"></div>
+            <div style="width: 100%; display: flex; justify-content: center; overflow: hidden;">
+                <div class="g-recaptcha" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark" data-size="compact"></div>
             </div>
             
             <button type="submit" class="btn btn-outline-light btn-sm w-100 mt-2">ENVIAR</button>
@@ -242,10 +240,12 @@
       </div>
 
     </div>
+
+    <hr class="mt-5 mb-4" style="background-color: rgba(255,255,255,0.3); height: 1px; border: none;" />
     
-    <div class="text-center mt-5" style="opacity: 0.8; font-size: 0.8rem;">
-      © 2026 RS REVOLUTION | Valladolid
-    </div>
+    <h6 class="text-center has-text-white pb-2" style="font-size: 0.9rem; opacity: 0.8;">
+      &copy; <script>document.write(new Date().getFullYear());</script> RS Revolution
+    </h6>
   </div>
 </footer>
 
@@ -260,6 +260,7 @@
     <script src="jsIndex/scriptFormulario.js"></script>
   </body>
 </html>
+
 
 
 
