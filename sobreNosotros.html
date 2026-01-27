@@ -192,54 +192,95 @@
 
     
 
-<footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;" class="py-5">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      
-      <div class="col-md-4 mb-4">
-        <h4 style="font-family: 'Oswald'; border-bottom: 2px solid rgba(255,255,255,0.3); display: inline-block;" class="pb-2 mb-3">SÍGUENOS</h4>
-        <div class="d-flex justify-content-center justify-content-md-start gap-3 mb-3">
-          <a href="#"><img src="img/instagram.webp" width="35" alt="Instagram"></a>
-          <a href="#"><img src="img/tiktok.webp" width="35" alt="TikTok"></a>
-          <a href="#"><img src="img/x.webp" width="35" alt="X"></a>
+    <footer
+      style="
+        background: linear-gradient(to left, #013bfa, #34b1ff);
+        color: #fff;
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center" style="min-height: 300px">
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h4>S&iacute;guenos</h4>
+            <div class="social-icons d-flex gap-3 mb-3">
+              <a href="https://instagram.com/rsrevolution_" target="_blank">
+                <img
+                  src="img/instagram.webp"
+                  alt="Logo de Instagram de @rsrevolution_"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a href="https://tiktok.com/@rsrevolution_" target="_blank">
+                <img
+                  src="img/tiktok.webp"
+                  alt="Logo de TikTok de @rsrevolution_"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a href="https://x.com/rsrevolution_" target="_blank">
+                <img
+                  src="img/x.webp"
+                  alt="Logo de X de @rsrevolution_"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </div>
+            <hr class="w-50" />
+            <p
+              class="has-text-white mt-3"
+              style="max-width: 400px; text-align: justify"
+            >
+              <strong>Condiciones de uso de las im&aacute;genes</strong><br />
+              Todas las fotograf&iacute;as publicadas en este sitio web son
+              propiedad de RS Revolution (D.V.).<br />
+              No est&aacute; permitido el uso comercial, reproducci&oacute;n o
+              modificación de las im&aacute;genes sin autorizaci&oacute;n
+              previa.<br />
+              <a
+                href="https://rsrevolution.es/condiciones.html"
+                style="text-decoration: underline"
+              >
+                Ver todos los t&eacute;rminos y condiciones
+              </a>
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h2>Contacto</h2>
+            <form id="contact-form" class="contact-form">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="from_name" required />
+              <label for="email">Correo:</label>
+              <input type="email" id="email" name="reply_to" required />
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" required></textarea>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-"
+              ></div>
+              <button type="submit" class="mt-3">Enviar</button>
+            </form>
+          </div>
         </div>
-        <p class="is-size-7" style="text-align: justify; opacity: 0.9;">
-          Todas las fotografías son propiedad de RS Revolution (D.V.). Prohibido su uso comercial sin permiso.
-          <br><a href="condiciones.html" style="color: #fff; text-decoration: underline;">Términos y condiciones</a>
-        </p>
       </div>
-
-      <div class="col-md-3 mb-4">
-        <h4 style="font-family: 'Oswald'; border-bottom: 2px solid rgba(255,255,255,0.3); display: inline-block;" class="pb-2 mb-3">NAVEGACIÓN</h4>
-        <ul style="list-style: none; padding: 0;" class="is-size-7">
-          <li class="mb-2"><a href="index.html" style="color: #fff; text-decoration: none;">Inicio</a></li>
-          <li class="mb-2"><a href="galeria.html" style="color: #fff; text-decoration: none;">Galería</a></li>
-          <li class="mb-2"><a href="eventos.html" style="color: #fff; text-decoration: none;">Eventos</a></li>
-          <li class="mb-2"><a href="sobreNosotros.html" style="color: #fff; text-decoration: none;">Sobre nosotros</a></li>
-          <li><a href="privacidad.html" style="color: #fff; text-decoration: none;">Privacidad</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 mb-4">
-        <h4 style="font-family: 'Oswald'; border-bottom: 2px solid rgba(255,255,255,0.3); display: inline-block;" class="pb-2 mb-3">CONTACTO</h4>
-        <form id="contact-form">
-          <input type="text" placeholder="Nombre" class="form-control form-control-sm mb-2" style="background: rgba(255,255,255,0.1); border: 1px solid #fff; color: #fff;">
-          <input type="email" placeholder="Correo" class="form-control form-control-sm mb-2" style="background: rgba(255,255,255,0.1); border: 1px solid #fff; color: #fff;">
-          <textarea placeholder="Mensaje" class="form-control form-control-sm mb-2" rows="2" style="background: rgba(255,255,255,0.1); border: 1px solid #fff; color: #fff;"></textarea>
-          
-          <div class="g-recaptcha" data-sitekey="TU_KEY" data-theme="dark" data-size="compact"></div>
-          
-          <button type="submit" class="btn btn-outline-light btn-sm w-100 mt-2">ENVIAR</button>
-        </form>
-      </div>
-
-    </div>
-    
-    <div class="text-center mt-5 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
-      <small>&copy; 2026 RS REVOLUTION</small>
-    </div>
-  </div>
-</footer>
+      <hr />
+      <h6
+        class="text-center has-text-white justify-content-center align-items-center mx-auto"
+      >
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        RS Revolution
+      </h6>
+      <hr />
+    </footer>
 
 
 
@@ -252,6 +293,7 @@
     <script src="jsIndex/scriptFormulario.js"></script>
   </body>
 </html>
+
 
 
 
