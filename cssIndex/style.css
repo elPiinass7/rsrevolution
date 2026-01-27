@@ -315,44 +315,48 @@ footer .social-icons a img {
 
 
 
-
-/* Estilo para las cajas del footer */
-.footer-column-box {
-    background: rgba(0, 0, 0, 0.4);
+/* --- MEJORA DE CONTRASTE Y CAPTCHA --- */
+.footer-glass-card {
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro para que el blanco resalte */
     padding: 30px;
     border-radius: 20px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-/* Títulos con tu color destacable */
-.footer-title {
-    color: #ffffff !important;
+.footer-title-custom {
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Sombra para que "salte" del fondo */
     border-bottom: 2px solid #ffffff;
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Estilo para los inputs del formulario */
-.contact-form .form-control {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
-    color: #fff !important;
-    transition: all 0.3s ease;
+/* Centrado del reCAPTCHA */
+.captcha-container {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.contact-form .form-control:focus {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border-color: #fff !important;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-/* Centrar el captcha y evitar que se corte */
 .g-recaptcha {
-    display: inline-block;
-    max-width: 100%;
+    display: inline-block; /* Esto permite que se centre con text-align: center */
+}
+
+/* Estilo de los inputs para que no se vean "ñe" */
+.footer-glass-card .form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: white !important;
+}
+
+.footer-glass-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
