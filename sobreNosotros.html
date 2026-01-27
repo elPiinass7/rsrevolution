@@ -189,76 +189,92 @@
         </div>
       </section>
     </main>
-
-    
-
-<footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;" class="py-5">
-  <div class="container">
-    <div class="row align-items-stretch gy-5">
-      
-      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="footer-glass-card">
-          <h4 class="footer-title-custom">S&iacute;guenos</h4>
-          <div class="social-icons d-flex justify-content-center gap-4 mb-4">
-            <a href="https://instagram.com/rsrevolution_" target="_blank">
-              <img src="img/instagram.webp" alt="Instagram" width="40" height="40">
-            </a>
-            <a href="https://tiktok.com/@rsrevolution_" target="_blank">
-              <img src="img/tiktok.webp" alt="TikTok" width="40" height="40">
-            </a>
-            <a href="https://x.com/rsrevolution_" target="_blank">
-              <img src="img/x.webp" alt="X" width="40" height="40">
-            </a>
+    <footer
+      style="
+        background: linear-gradient(to left, #013bfa, #34b1ff);
+        color: #fff;
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center" style="min-height: 300px">
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h4>Síguenos</h4>
+            <div class="social-icons d-flex gap-3 mb-3">
+              <a href="https://instagram.com/rsrevolution_" target="_blank">
+                <img
+                  alt="Logo de Instagram de @rsrevolution_"
+                  height="40"
+                  loading="lazy"
+                  src="img/instagram.webp"
+                  width="40"
+                />
+              </a>
+              <a href="https://tiktok.com/@rsrevolution_" target="_blank">
+                <img
+                  alt="Logo de TikTok de @rsrevolution_"
+                  height="40"
+                  loading="lazy"
+                  src="img/tiktok.webp"
+                  width="40"
+                />
+              </a>
+              <a href="https://x.com/rsrevolution_" target="_blank">
+                <img
+                  alt="Logo de X de @rsrevolution_"
+                  height="40"
+                  loading="lazy"
+                  src="img/x.webp"
+                  width="40"
+                />
+              </a>
+            </div>
+            <hr class="w-50" />
+            <p
+              class="has-text-white mt-3"
+              style="max-width: 400px; text-align: justify"
+            >
+              <strong>Condiciones de uso de las imágenes</strong><br />
+              Todas las fotografías publicadas en este sitio web son propiedad
+              de RS Revolution (D.V.).<br />
+              No está permitido el uso comercial, reproducción o modificación de
+              las imágenes sin autorización previa.<br />
+              <a href="https://rsrevolution.es/condiciones.html" style="text-decoration: underline; color: #fff;">Ver todos los t&eacute;rminos y condiciones</a>
+            </p>
           </div>
-          <hr class="w-75 mx-auto" style="border-color: rgba(255,255,255,0.2);">
-          <p class="mt-3 is-size-7" style="text-align: justify; opacity: 0.95;">
-            <strong>Condiciones de uso de las im&aacute;genes</strong><br />
-            Todas las fotograf&iacute;as son propiedad de RS Revolution (D.V.). Prohibido su uso comercial o modificaci&oacute;n sin permiso previo.
-            <br>
-            <a href="condiciones.html" style="text-decoration: underline; color: #fff;">Ver t&eacute;rminos y condiciones</a>
-          </p>
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h2>Contacto</h2>
+            <form class="contact-form" id="contact-form">
+              <label for="name">Nombre:</label>
+              <input id="name" name="from_name" required="" type="text" />
+              <label for="email">Correo:</label>
+              <input id="email" name="reply_to" required="" type="email" />
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" required=""></textarea>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark"
+              ></div>
+              <button class="mt-3" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-        <div class="footer-glass-card">
-          <h2 class="footer-title-custom">Contacto</h2>
-          <form id="contact-form" class="contact-form w-100 text-start">
-            <div class="mb-2">
-              <label for="name" class="form-label is-size-7 mb-1">Nombre:</label>
-              <input type="text" id="name" name="from_name" class="form-control" required />
-            </div>
-            <div class="mb-2">
-              <label for="email" class="form-label is-size-7 mb-1">Correo:</label>
-              <input type="email" id="email" name="reply_to" class="form-control" required />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label is-size-7 mb-1">Mensaje:</label>
-              <textarea id="message" name="message" class="form-control" rows="2" required></textarea>
-            </div>
-            
-            <div class="captcha-container">
-              <div class="g-recaptcha" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark"></div>
-            </div>
-            
-            <button type="submit" class="btn btn-outline-light w-100 mt-2 py-2">ENVIAR</button>
-          </form>
-        </div>
-      </div>
-
-    </div>
-
-    <hr class="mt-5 mb-4" style="background-color: rgba(255,255,255,0.3); height: 1px; border: none;">
-    
-    <h6 class="text-center has-text-white pb-2" style="font-size: 0.9rem; opacity: 0.8;">
-      &copy; <script>document.write(new Date().getFullYear());</script> RS Revolution
-    </h6>
-  </div>
-</footer>
-
-
-
-    
+      <hr />
+      <h6
+        class="text-center has-text-white justify-content-center align-items-center mx-auto"
+      >
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        RS Revolution
+      </h6>
+      <hr />
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="jsIndex/jsIndex/rendimientoFormCap.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -267,6 +283,7 @@
     <script src="jsIndex/scriptFormulario.js"></script>
   </body>
 </html>
+
 
 
 
