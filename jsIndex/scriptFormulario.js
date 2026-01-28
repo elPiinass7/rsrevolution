@@ -8,6 +8,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     submitButton.disabled = false;
     return;
   }
+
   emailjs.send("service_x3dvhqc", "template_jd5j3i3", {
     from_name: document.getElementById('name').value,
     reply_to: document.getElementById('email').value,
@@ -27,16 +28,4 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     alert("Ocurrió un error al enviar el mensaje.");
     submitButton.disabled = false;
   });
-});
-
-window.addEventListener("scroll", function () {
-  const form = document.getElementById("contact-form");
-  if (form && !window.recaptchaLoaded) {
-    const script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/api.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    window.recaptchaLoaded = true;
-  }
 });
