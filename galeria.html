@@ -525,12 +525,17 @@
     <script src="jsIndex/scriptFormulario.js" defer></script>
     <script>
       window.addEventListener("load", () => {
-        AOS.init({ duration: 800, once: true });
+        AOS.init({ 
+          duration: 800, 
+          once: true,
+          disable: 'mobile'
+        });
       });
     </script>
     <script async defer src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
+
 
 
 
