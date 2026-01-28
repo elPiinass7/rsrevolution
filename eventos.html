@@ -1,26 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Descarga las fotografías de los últimos eventos de motor. Accede a las galerías temporales de drift, clásicos y concentraciones de RS Revolution." />
-    <meta name="keywords" content="descargar fotos motor, eventos rs revolution, fotos drift valladolid, fotos clásicos viana, descargas fotografía motor" />
+    <meta
+      name="description"
+      content="Descarga las fotografías de los últimos eventos de motor. Accede a las galerías temporales de drift, clásicos y concentraciones de RS Revolution."
+    />
+    <meta
+      name="keywords"
+      content="descargar fotos motor, eventos rs revolution, fotos drift valladolid, fotos clásicos viana, descargas fotografía motor"
+    />
     <meta name="author" content="RS Revolution" />
-    
     <link rel="canonical" href="https://rsrevolution.es/eventos.html" />
-    
     <title>RS Revolution - Eventos y Descargas</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" as="style">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print" onload="this.onload=null;this.media='all';" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" media="print" onload="this.onload=null;this.media='all';" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.onload=null;this.media='all';" />
     <link rel="stylesheet" href="cssIndex/style.css" />
     <link rel="stylesheet" href="galeria/style.css" />
     <link rel="shortcut icon" href="img/RS_RevICO.ico" type="image/x-icon" />
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -28,15 +35,26 @@
       gtag("js", new Date());
       gtag("config", "G-0FLF50C05Z");
     </script>
-    
     <meta name="google-adsense-account" content="ca-pub-1734020818189817">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1734020818189817" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1734020818189817"
+         crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
       window.addEventListener("load", function () { emailjs.init("FLCvsaSBa0Fl16g8S"); });
     </script>
-</head>
-<body class="bg-dark">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Eventos y Descargas - RS Revolution",
+        "description": "Apartado de Eventos recientes acudidos con sus descargas correspondientes.",
+        "url": "https://rsrevolution.es/eventos.html",
+        "publisher": { "@type": "Organization", "name": "RS Revolution" }
+      }
+    </script>
+  </head>
+  <body>
     <button aria-label="Volver arriba" id="scrollTopBtn" onclick="scrollToTop()" title="Volver arriba">↑</button>
 
     <div id="tacho-loader-wrapper">
@@ -48,143 +66,129 @@
       <span class="tacho-text">Calentando motores...</span>
     </div>
 
-    <nav class="navbar navbar-expand-lg position-fixed w-100" style="background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); z-index: 1000;">
+    <nav class="navbar navbar-expand-lg position-fixed w-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://rsrevolution.es/">
-          <img alt="Logo de RS Revolution" height="75" src="img/RS_RevAFR.webp?quality=65" width="75" />
+          <img alt="Logo de RS Revolution" height="75" loading="lazy" src="img/RS_RevAFR.webp?quality=65" width="75" />
         </a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarColor03">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor03">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link active text-white fw-bold" href="eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
+            <li class="nav-item"><a class="nav-link has-text-white" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link active has-text-white" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link has-text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
           </ul>
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link text-white" href="privacidad.html">Privacidad</a></li>
+            <li class="nav-item"><a class="nav-link has-text-white" href="privacidad.html">Política de Privacidad</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <header class="text-center py-5" style="padding-top: 150px !important;">
-      <h1 class="display-4 text-white fw-bold" style="font-family: 'Oswald';">Eventos y Descargas</h1>
-      <p class="h5 text-secondary">
+    <header class="text-center py-5" style="padding-top: 100px">
+      <h1 class="title has-text-white">Eventos y Descargas</h1>
+      <span class="subtitle has-text-grey-light">
         Revive los mejores momentos y descarga tus fotografías de los <span class="destacable">ÚLTIMOS EVENTOS</span>
-      </p>
+      </span>
     </header>
-
     <main class="container my-5">
-      <section class="text-center bg-dark text-white py-5 px-3 rounded-4 shadow-lg border border-secondary">
-        <p class="mb-5 lead">
+      <section class="text-center bg-dark text-white py-4 px-3" style="border-radius: 15px;">
+        <p class="mb-5">
           Aquí encontrarás las fotos de los eventos más recientes. Se irán renovando periódicamente para dejar espacio a nuevas experiencias y capturas de alta velocidad.
         </p>
         <div class="row gy-5 justify-content-center">
-          
           <div class="col-12 col-md-4 text-center">
-            <img alt="RoadStr Breakfast Valladolid 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_RoadStrBreakfastVall2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">RoadStr Breakfast Valladolid</h4>
-            <p class="text-secondary small mt-2 px-2">Revive la reunión de Valladolid. Deportivos y clásicos en una mañana de pasión motorista con la comunidad de RoadStr.</p>
+            <img alt="RoadStr Breakfast Valladolid 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_RoadStrBreakfastVall2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">RoadStr Breakfast Valladolid</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Revive la reunión de Valladolid. Deportivos y clásicos en una mañana de pasión motorista con la comunidad de RoadStr.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/19xLPbN0OMXqscXWPW2MAaxHCeW8_risM?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/19xLPbN0OMXqscXWPW2MAaxHCeW8_risM?usp=sharing" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="BMWs M Kotarr 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_Kotarr20dic2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">BMWs M Kotarr 2025</h4>
-            <p class="text-secondary small mt-2 px-2">Adrenalina pura con los modelos M de BMW. Capturas de alta velocidad y drifting en cada curva del trazado de Kotarr.</p>
+            <img alt="BMWs M Kotarr 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_Kotarr20dic2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">BMWs M Kotarr 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Adrenalina pura con los modelos M de BMW. Capturas de alta velocidad y drifting en cada curva del trazado de Kotarr.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1LJ5Er4xFfSvpNS6cR8NV7WFfXbbwqGWq?usp=drive_link" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1LJ5Er4xFfSvpNS6cR8NV7WFfXbbwqGWq?usp=drive_link" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Gum Clouds 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_GumClouds_2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Gum Clouds 2025</h4>
-            <p class="text-secondary small mt-2 px-2">Espectáculo de humo y neumáticos. Una galería donde el drift fue el absoluto protagonista de la jornada en Gum Clouds.</p>
+            <img alt="Gum Clouds 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_GumClouds_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Gum Clouds 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Espectáculo de humo y neumáticos. Una galería donde el drift fue el absoluto protagonista de la jornada en Gum Clouds.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal" data-drive-link="https://drive.google.com/drive/folders/1gX-6cr-_mJFjcRcO6JptMuEnCD_zfE2v?usp=drive_link">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal" data-drive-link="https://drive.google.com/drive/folders/1gX-6cr-_mJFjcRcO6JptMuEnCD_zfE2v?usp=drive_link">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Meet And Cars Tres Cantos 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_MeetAndCars_2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Meet And Cars 2025</h4>
-            <p class="text-secondary small mt-2 px-2">Concentración multimarca en Tres Cantos. Una reunión espectacular con gran variedad de proyectos y entusiastas del automovilismo.</p>
+            <img alt="Meet And Cars Tres Cantos 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_MeetAndCars_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Meet And Cars 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Concentración multimarca en Tres Cantos. Una reunión espectacular con gran variedad de proyectos y entusiastas del automovilismo.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1oLvGW-Zg6e2WMWp-NpHSEu9r4BJDVUpC?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1oLvGW-Zg6e2WMWp-NpHSEu9r4BJDVUpC?usp=sharing" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Drift Day and Night FK1 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_2Fast2EventsDriftDayFK1_2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Drift Day & Night FK1</h4>
-            <p class="text-secondary small mt-2 px-2">Sesión intensa de drift día y noche en el circuito FK1. Fotografía nocturna capturando la esencia de la velocidad bajo los focos.</p>
+            <img alt="Drift Day and Night FK1 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_2Fast2EventsDriftDayFK1_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Drift Day & Night FK1</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Sesión intensa de drift día y noche en el circuito FK1. Fotografía nocturna capturando la esencia de la velocidad bajo los focos.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1ipmsd_fvo7gw_UJj-CNvgYw9qjZChMBi?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1ipmsd_fvo7gw_UJj-CNvgYw9qjZChMBi?usp=sharing" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Clásicos La Seca 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_ClasicosLaSeca2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos La Seca 2025</h4>
-            <p class="text-secondary small mt-2 px-2">Joyas del automovilismo histórico en La Seca. Un repaso visual por los coches que marcaron época y que siguen rugiendo hoy.</p>
+            <img alt="Clásicos La Seca 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_ClasicosLaSeca2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos La Seca 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Joyas del automovilismo histórico en La Seca. Un repaso visual por los coches que marcaron época y que siguen rugiendo hoy.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1AGIJ543d3rYrJ7mt41fQ-fYuK_D188u6?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1AGIJ543d3rYrJ7mt41fQ-fYuK_D188u6?usp=sharing" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Clásicos Viana de Cega 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_ClasicosVianaDeCega_2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos Viana de Cega</h4>
-            <p class="text-secondary small mt-2 px-2">Mañana de nostalgia en Viana de Cega. Los vehículos clásicos se apoderaron de las calles en una concentración llena de historia.</p>
+            <img alt="Clásicos Viana de Cega 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_ClasicosVianaDeCega_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos Viana de Cega</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Mañana de nostalgia en Viana de Cega. Los vehículos clásicos se apoderaron de las calles en una concentración llena de historia.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1ShwEDljW12l7O3UTr38RY3Rv4Zxza4gv?usp=drive_link" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1ShwEDljW12l7O3UTr38RY3Rv4Zxza4gv?usp=drive_link" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Clásicos Portillo 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_ClasicosPortillo2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos Portillo 2025</h4>
-            <p class="text-secondary small mt-2 px-2">Encuentro de clásicos bajo el castillo de Portillo. Un entorno único para capturar la belleza de los coches que resisten el tiempo.</p>
+            <img alt="Clásicos Portillo 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_ClasicosPortillo2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos Portillo 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Encuentro de clásicos bajo el castillo de Portillo. Un entorno único para capturar la belleza de los coches que resisten el tiempo.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1kFu_orMQTDu1jVURLmzkj399Wlz1J5n0?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1kFu_orMQTDu1jVURLmzkj399Wlz1J5n0?usp=sharing" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
           <div class="col-12 col-md-4 text-center">
-            <img alt="Club Drift y Grip 2025" class="img-fluid rounded border border-secondary shadow" src="galeria/img/Portada_DriftAndDrip2025.webp?quality=60" width="480" height="320">
-            <h4 class="mt-3 text-white h5" style="font-family: 'Oswald'; text-transform: uppercase;">Club Drift y Grip 2025</h4>
-            <p class="text-secondary small mt-2 px-2">Precisión del grip y el ángulo del drift. Jornada técnica donde cada piloto buscó su límite en el trazado ante mi objetivo profesional.</p>
+            <img alt="Club Drift y Grip 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_DriftAndDrip2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Club Drift y Grip 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2">Precisión del grip y el ángulo del drift. Jornada técnica donde cada piloto buscó su límite en el trazado ante mi objetivo profesional.</p>
             <div class="my-3" data-aos="fade-up">
-              <a class="btn btn-outline-light px-4" href="https://drive.google.com/drive/folders/1DBgG7CrQh-ahYeNYKQ-Y0VFE8qH4XE4l?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1DBgG7CrQh-ahYeNYKQ-Y0VFE8qH4XE4l?usp=sharing" target="_blank">📥 Descargar Fotos</a>
             </div>
           </div>
-
-        </div> 
-      </section>
+        </div> </section>
     </main>
-
     <div class="modal fade" id="downloadModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark text-white border-secondary">
-          <div class="modal-header border-secondary">
-            <h5 class="modal-title" style="font-family: 'Oswald';">Opciones de Descarga</h5>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Opciones de Descarga</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
             <div id="modal-choice-view">
               <p class="text-center">Elige el tipo de descarga que prefieres:</p>
-              <a id="modal-download-watermark" href="#" target="_blank" class="btn btn-outline-light w-100 mb-3">Con Marca de Agua (Gratis)</a>
+              <a id="modal-download-watermark" href="#" target="_blank" class="btn btn-outline-light download-btn w-100 mb-3">Con Marca de Agua (Gratis)</a>
               <button id="modal-show-contact" class="btn btn-success w-100">Sin Marca de Agua (Contacto)</button>
             </div>
             <div id="modal-contact-view" style="display: none;">
               <p>Contacta conmigo para obtener las fotos en alta resolución:</p>
-              <a href="https://instagram.com/rsrevolution_" target="_blank" class="btn btn-primary w-100 mb-3">
-                Instagram @rsrevolution_
+              <a href="https://instagram.com/rsrevolution_" target="_blank" class="btn btn-contact-insta w-100 mb-3">
+                <img src="img/instagram.webp" alt="Insta" width="20"> Instagram
               </a>
               <button id="modal-contact-form-btn" class="btn btn-light w-100 mb-3">Ir al Formulario</button>
               <button id="modal-back-button" class="btn btn-outline-secondary w-100 mt-2">← Volver</button>
@@ -193,60 +197,115 @@
         </div>
       </div>
     </div>
-
     <div class="container text-center my-5">
       <p style="font-size: 10px; color: #666; letter-spacing: 2px;">PUBLICIDAD</p>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1734020818189817" data-ad-slot="6506708683" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1734020818189817"
+           data-ad-slot="6506708683"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
-
-    <footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;" class="py-5">
+    <footer
+      style="
+        background: linear-gradient(to left, #013bfa, #34b1ff);
+        color: #fff;
+      "
+    >
       <div class="container">
         <div class="row align-items-center" style="min-height: 300px">
-          <div class="col-md-6 d-flex flex-column align-items-center text-center mb-5 mb-md-0">
-            <h4 style="font-family: 'Oswald';">SÍGUENOS</h4>
-            <div class="social-icons d-flex gap-4 mb-4">
-              <a href="https://instagram.com/rsrevolution_" target="_blank"><img alt="Instagram" height="40" src="img/instagram.webp" width="40"></a>
-              <a href="https://tiktok.com/@rsrevolution_" target="_blank"><img alt="TikTok" height="40" src="img/tiktok.webp" width="40"></a>
-              <a href="https://x.com/rsrevolution_" target="_blank"><img alt="X" height="40" src="img/x.webp" width="40"></a>
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h4>Síguenos</h4>
+            <div class="social-icons d-flex gap-3 mb-3">
+              <a href="https://instagram.com/rsrevolution_" target="_blank">
+                <img
+                  alt="Logo de Instagram de @rsrevolution_"
+                  height="40"
+                  loading="lazy"
+                  src="img/instagram.webp"
+                  width="40"
+                />
+              </a>
+              <a href="https://tiktok.com/@rsrevolution_" target="_blank">
+                <img
+                  alt="Logo de TikTok de @rsrevolution_"
+                  height="40"
+                  loading="lazy"
+                  src="img/tiktok.webp"
+                  width="40"
+                />
+              </a>
+              <a href="https://x.com/rsrevolution_" target="_blank">
+                <img
+                  alt="Logo de X de @rsrevolution_"
+                  height="40"
+                  loading="lazy"
+                  src="img/x.webp"
+                  width="40"
+                />
+              </a>
             </div>
-            <hr class="w-50 mx-auto" />
-            <p class="small mt-3 px-3" style="text-align: justify">
-              <strong>Condiciones de uso de las imágenes:</strong> Todas las fotografías son propiedad de RS Revolution (D.V.). Prohibido su uso comercial sin permiso previo.<br />
-              <a href="condiciones.html" class="text-white text-decoration-underline">Ver términos y condiciones</a>
+            <hr class="w-50" />
+            <p
+              class="has-text-white mt-3"
+              style="max-width: 400px; text-align: justify"
+            >
+              <strong>Condiciones de uso de las imágenes</strong><br />
+              Todas las fotografías publicadas en este sitio web son propiedad
+              de RS Revolution (D.V.).<br />
+              No está permitido el uso comercial, reproducción o modificación de
+              las imágenes sin autorización previa.<br />
+              <a href="https://rsrevolution.es/condiciones.html" style="text-decoration: underline; color: #fff;">Ver todos los t&eacute;rminos y condiciones</a>
             </p>
           </div>
-          <div class="col-md-6 d-flex flex-column align-items-center text-center">
-            <h4 class="mb-4" style="font-family: 'Oswald';">CONTACTO</h4>
-            <form class="contact-form px-3 w-100" id="contact-form" style="max-width: 400px;">
-              <input id="name" name="from_name" placeholder="Nombre" class="form-control mb-2 bg-transparent text-white" required type="text" style="border: 1px solid rgba(255,255,255,0.4);">
-              <input id="email" name="reply_to" placeholder="Correo" class="form-control mb-2 bg-transparent text-white" required type="email" style="border: 1px solid rgba(255,255,255,0.4);">
-              <textarea id="message" name="message" placeholder="Mensaje" class="form-control mb-3 bg-transparent text-white" required rows="2" style="border: 1px solid rgba(255,255,255,0.4);"></textarea>
-              <div class="d-flex justify-content-center mb-3">
-                <div class="g-recaptcha" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark" data-size="compact"></div>
-              </div>
-              <button class="btn btn-outline-light w-100 py-2 fw-bold" type="submit">ENVIAR</button>
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h2>Contacto</h2>
+            <form class="contact-form" id="contact-form">
+              <label for="name">Nombre:</label>
+              <input id="name" name="from_name" required="" type="text" />
+              <label for="email">Correo:</label>
+              <input id="email" name="reply_to" required="" type="email" />
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" required=""></textarea>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark"
+              ></div>
+              <button class="mt-3" type="submit">Enviar</button>
             </form>
           </div>
         </div>
       </div>
-      <hr class="opacity-25" />
-      <h6 class="text-center">&copy; <script>document.write(new Date().getFullYear());</script> RS Revolution</h6>
+      <hr />
+      <h6
+        class="text-center has-text-white justify-content-center align-items-center mx-auto"
+      >
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        RS Revolution
+      </h6>
+      <hr />
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer
+    ></script>
     <script src="galeria/script.js" defer></script>
     <script src="jsIndex/scriptSubir.js" defer></script>
     <script src="jsIndex/scriptFormulario.js" defer></script>
     <script>
       window.addEventListener("load", () => {
-        AOS.init({ 
-          duration: 800, 
-          once: true,
-          disable: 'mobile' 
-        });
+        AOS.init({ duration: 800, once: true });
       });
     </script>
     <script async defer src="https://www.google.com/recaptcha/api.js"></script>
-</body>
+  </body>
 </html>
