@@ -43,7 +43,14 @@
     <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_ClasicosPortillo2025.webp</image:loc></image:image>
     <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_DriftAndDrip2025.webp</image:loc></image:image>
   </url>
-
+        
+  <url>
+    <loc>https://rsrevolution.es/contacto.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+        
   <url>
     <loc>https://rsrevolution.es/sobreNosotros.html</loc>
     <lastmod>2026-02-10</lastmod>
