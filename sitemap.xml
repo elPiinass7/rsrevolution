@@ -4,110 +4,61 @@
 
   <url>
     <loc>https://rsrevolution.es/</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://rsrevolution.es/img/RS_RevAFR.webp</image:loc>
-      <image:title>Logo de RS Revolution</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/img/img1.webp</image:loc>
-      <image:title>BMW M3 en Fast and Nice en Kotarr 2025</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/img/img2.webp</image:loc>
-      <image:title>Mercedes AMG GT Carrera en Volrace Clubs en el Jarama en Madrid 2025</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/img/img3.webp</image:loc>
-      <image:title>Renault 5 Michelín en los Clásicos de Aldeamayor 2025</image:title>
+      <image:title>Logo RS Revolution</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://rsrevolution.es/galeria.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://rsrevolution.es/galeria/img/img0000.webp</image:loc>
-      <image:title>DriftDay and Night en FK1 2025, BMW rebetxiki y nissan derrapando</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/img0001.webp</image:loc>
-      <image:title>BMW 1000cv puesta de sol y nissan 200sx derrapando en FK1</image:title>
+      <image:title>Drift Day FK1</image:title>
     </image:image>
     <image:image>
       <image:loc>https://rsrevolution.es/galeria/img/img000.webp</image:loc>
-      <image:title>II Concentración de Clásicos de Viana de Cega 2025, Ferrari Testarrosa y BMW Z3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/img001.webp</image:loc>
-      <image:title>Clásicos Viana de Cega: Ferrari 328 GTS y Fiat 600 1970</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/img002.webp</image:loc>
-      <image:title>Sesiones de fotos: Volkswagen Golf GTI en Zamora y Aston Martin Vantage en Burgos</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/img003.webp</image:loc>
-      <image:title>Fotografía de motos: KTM, Kawasaki ZX 6R y Mini Cooper S</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/img00.webp</image:loc>
-      <image:title>Fast and Nice Kotarr: BMW M3 de JaviSRC, Nissan Silvia y Honda Civic</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/img01.webp</image:loc>
-      <image:title>Fast and Nice Kotarr: Audi R8, Volvo ranchera V8 y Porsche Carrera S</image:title>
+      <image:title>Clásicos Viana de Cega</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://rsrevolution.es/eventos.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/Portada_RoadStrBreakfastVall2025.webp</image:loc>
-      <image:title>RoadStr Breakfast Valladolid 2025</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/Portada_Kotarr20dic2025.webp</image:loc>
-      <image:title>BMWs M Kotarr 2025</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/Portada_GumClouds_2025.webp</image:loc>
-      <image:title>Gum Clouds 2025</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://rsrevolution.es/galeria/img/Portada_ClasicosVianaDeCega_2025.webp</image:loc>
-      <image:title>Clásicos Viana de Cega 2025</image:title>
-    </image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_RoadStrBreakfastVall2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_Kotarr20dic2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_GumClouds_2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_MeetAndCars_2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_2Fast2EventsDriftDayFK1_2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_ClasicosLaSeca2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_ClasicosVianaDeCega_2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_ClasicosPortillo2025.webp</image:loc></image:image>
+    <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_DriftAndDrip2025.webp</image:loc></image:image>
   </url>
 
   <url>
     <loc>https://rsrevolution.es/sobreNosotros.html</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://rsrevolution.es/img/fondoSobreNosotros.webp</image:loc>
-      <image:title>Fotografía de ambiente motor en Valladolid</image:title>
-    </image:image>
   </url>
 
   <url>
     <loc>https://rsrevolution.es/privacidad.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-02-10</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://rsrevolution.es/condiciones.html</loc>
-    <lastmod>2026-01-28</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-02-10</lastmod>
     <priority>0.3</priority>
   </url>
 
