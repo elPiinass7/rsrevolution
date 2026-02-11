@@ -309,3 +309,29 @@ footer .social-icons a img {
     width: 40px;
     height: 40px;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .title.has-text-white, h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .section {
+        padding: 2rem 1rem !important; 
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-container {
+        height: 50vh; /* Mayor altura relativa en móviles */
+    }
+    .slide {
+        width: 85vw; /* La imagen ocupa casi todo el ancho de la pantalla */
+    }
+    .slide img {
+        border-radius: 15px;
+    }
+}
