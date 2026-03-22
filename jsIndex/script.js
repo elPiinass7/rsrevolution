@@ -73,6 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (loader) {
     loader.style.opacity = "0";
     loader.style.pointerEvents = "none";
-    setTimeout(() => loader.remove(), 500); // lo quita del DOM
+    setTimeout(() => loader.remove(), 500);
   }
 });
