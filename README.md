@@ -9,4 +9,7 @@ El usuario o cliente podrá acceder a nuestras redes sociales y ver algunas de n
 se incluye un apartado de contacto para poder mandar un email a la dirección jsa.rsrevolution@gmail.com para poder contactar con nosotros
 o para pedir alguna edición adicional a alguna fotografía temporal que deseen y que no tenga ningún tipo de edición (cruda).
 
+Además, actualmente RS Revolution se dedicará a organizar eventos automovilísticos sin ánimo de lucro alrededor de Castilla y León, España. 
+La idea es crear una comunidad para conocernos, crear contenido y disfrutar de lo que nos gusta.
+
 Gracias por leer esto y apoyar el trabajo de la fotografía y programación ;D.
