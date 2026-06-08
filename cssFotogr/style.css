@@ -587,3 +587,12 @@ body.gold-theme footer h6,
 body.gold-theme footer .has-text-white {
     color: #000 !important;
 }
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: #cce5ff !important; 
+}
