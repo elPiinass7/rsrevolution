@@ -146,12 +146,6 @@ h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
     box-shadow: 0 4px 15px rgba(52, 177, 255, 0.3);
 }
 
-
-
-
-
-
-
 #scrollTopBtn {
     display: none;
     position: fixed;
@@ -595,4 +589,28 @@ body.gold-theme footer .has-text-white {
 }
 .navbar .nav-link:hover {
     color: #cce5ff !important; 
+}
+
+/* ==================================================
+   FORZAR ALTURA UNIFORME DEL NAV EN TODA LA WEB
+================================================== */
+.navbar {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+/* Evitar que las listas empujen la barra hacia abajo en PC */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .navbar-nav {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .nav-item {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
