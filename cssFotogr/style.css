@@ -591,26 +591,19 @@ body.gold-theme footer .has-text-white {
     color: #cce5ff !important; 
 }
 
-/* ==================================================
-   FORZAR ALTURA UNIFORME DEL NAV EN TODA LA WEB
-================================================== */
-.navbar {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-}
-
-/* Evitar que las listas empujen la barra hacia abajo en PC */
 @media (min-width: 992px) {
-    .navbar-collapse {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
+    nav.navbar {
+        height: 85px !important; 
+        min-height: 85px !important;
+        max-height: 85px !important;
+        display: flex !important;
+        align-items: center !important;
+        overflow: visible !important;
     }
-    .navbar-nav {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-    .nav-item {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
+    
+    .navbar > .container-fluid {
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
     }
 }
