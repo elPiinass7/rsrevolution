@@ -29,7 +29,7 @@
   </url>
 
   <url>
-    <loc>https://rsrevolution.es/eventos.html</loc>
+    <loc>https://rsrevolution.es/descargas.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -43,30 +43,64 @@
     <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_ClasicosPortillo2025.webp</image:loc></image:image>
     <image:image><image:loc>https://rsrevolution.es/galeria/img/Portada_DriftAndDrip2025.webp</image:loc></image:image>
   </url>
-        
+
   <url>
-    <loc>https://rsrevolution.es/contacto.html</loc>
-    <lastmod>2026-02-10</lastmod>
+    <loc>https://rsrevolution.es/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://rsrevolution.es/fotografia.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rsrevolution.es/galeria.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-        
   <url>
-    <loc>https://rsrevolution.es/sobreNosotros.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://rsrevolution.es/descargas.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
+    <loc>https://rsrevolution.es/eventos.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rsrevolution.es/sobreNosotros.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rsrevolution.es/contacto.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://rsrevolution.es/privacidad.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rsrevolution.es/condiciones.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
