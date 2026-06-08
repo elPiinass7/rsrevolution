@@ -4,6 +4,7 @@
 .env.*.local
 config.js
 config-dev.js
+config-deploy.json
 
 # Node modules y dependencias
 node_modules/

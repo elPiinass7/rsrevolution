@@ -3,44 +3,49 @@ name: 🚀 Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
       - name: 📥 Checkout code
         uses: actions/checkout@v4
       
-      - name: 📦 Setup Node.js
-        uses: actions/setup-node@v4
+      - name: 🔑 Create config.json with secrets
+        run: |
+          cat > config-deploy.json << 'ENDFILE'
+          {
+            "emailjs": {
+              "publicKey": "${{ secrets.EMAILJS_PUBLIC_KEY }}",
+              "serviceId": "${{ secrets.EMAILJS_SERVICE_ID }}",
+              "templateId": "${{ secrets.EMAILJS_TEMPLATE_ID }}"
+            },
+            "recaptcha": {
+              "siteKey": "${{ secrets.RECAPTCHA_SITE_KEY }}"
+            },
+            "analytics": {
+              "id": "${{ secrets.GA_ID }}"
+            }
+          }
+          ENDFILE
+      
+      - name: 🔐 Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: 📤 Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          node-version: '18'
-      
-      - name: 🔑 Generate .env.local with secrets
-        run: |
-          cat > .env.local << EOF
-          VITE_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}
-          VITE_EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}
-          VITE_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}
-          VITE_RECAPTCHA_SITE_KEY=${{ secrets.RECAPTCHA_SITE_KEY }}
-          VITE_GA_ID=${{ secrets.GA_ID }}
-          EOF
-      
-      - name: 🔐 Verify .env.local (no display for security)
-        run: |
-          if [ -f .env.local ]; then
-            echo "✓ .env.local created successfully"
-          else
-            echo "✗ .env.local creation failed"
-            exit 1
-          fi
+          path: '.'
       
       - name: 🚀 Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          cname: rsrevolution.es
+        id: deployment
+        uses: actions/deploy-pages@v4
