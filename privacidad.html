@@ -44,38 +44,44 @@
   <body>
     <button onclick="scrollToTop()" id="scrollTopBtn" title="Volver arriba" aria-label="Volver arriba"> ↑ </button>
     <img src="img/fondoSobreNosotros.webp?quality=90" alt="Foto de fondo Valladolid" class="background-image">
-    <nav class="navbar navbar-expand-lg position-fixed w-100">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://rsrevolution.es/">
-          <img src="img/RS_RevAFR.webp?quality=65" alt="Logo de RS Revolution" width="75" height="75">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
-          aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor03">
-          <ul class="navbar-nav me-auto">
-              <li class="nav-item nav-foto-only"><a class="nav-link has-text-white" href="galeria.html">Galería</a></li>
-              <li class="nav-item nav-foto-only"><a class="nav-link has-text-white" href="descargas.html">Descargas</a></li>
-              
-              <li class="nav-item"><a class="nav-link has-text-white" href="contacto.html">Contacto</a></li>
-              <li class="nav-item"><a class="nav-link has-text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
-          </ul>
-          <ul class="navbar-nav ms-auto align-items-center">
-              <li class="nav-item me-3"><a class="nav-link has-text-white" href="privacidad.html">Política de Privacidad</a></li>
-              <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                  <div class="switch-container">
-                      <span class="switch-text" id="text-foto">FOTOS</span>
-                      <label class="custom-switch">
-                          <input type="checkbox" id="pageSwitch" onchange="togglePage(this)">
-                          <span class="switch-slider"></span>
-                      </label>
-                      <span class="switch-text" id="text-event">EVENTOS</span>
-                  </div>
-              </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg position-fixed w-100" style="z-index: 1000;">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand me-1 me-md-2" href="fotografia.html">
+                    <img src="img/RS_RevAFR.webp" alt="Logo" width="65" height="65" class="d-inline-block" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 mt-lg-0 text-start text-lg-center">
+                    <li class="nav-item nav-foto-only"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item nav-foto-only"><a class="nav-link" href="descargas.html">Descargas</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobreNosotros.html">Sobre nosotros</a></li>
+                </ul>
+                
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start text-lg-center pe-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-end switch-nav-wrapper">
+                <div class="switch-container">
+                    <span class="switch-text text-uppercase" id="text-foto">Fotos</span>
+                    <label class="custom-switch">
+                        <input type="checkbox" id="pageSwitch" onchange="togglePage(this)">
+                        <span class="switch-slider"></span>
+                    </label>
+                    <span class="switch-text text-uppercase" id="text-event">Eventos</span>
+                </div>
+            </div>
+
         </div>
-      </div>
     </nav>
     <header class="text-center py-5" style="padding-top: 100px;">
       <h1 class="title has-text-white">Política de Privacidad</h1>
@@ -217,6 +223,3 @@
     <script src="jsFotogr/scriptFormulario.js" defer></script>
   </body>
 </html>
-
-
-
