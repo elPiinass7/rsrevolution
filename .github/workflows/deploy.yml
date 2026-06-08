@@ -1,0 +1,46 @@
+name: 🚀 Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: 🔑 Generate .env.local with secrets
+        run: |
+          cat > .env.local << EOF
+          VITE_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}
+          VITE_EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}
+          VITE_RECAPTCHA_SITE_KEY=${{ secrets.RECAPTCHA_SITE_KEY }}
+          VITE_GA_ID=${{ secrets.GA_ID }}
+          EOF
+      
+      - name: 🔐 Verify .env.local (no display for security)
+        run: |
+          if [ -f .env.local ]; then
+            echo "✓ .env.local created successfully"
+          else
+            echo "✗ .env.local creation failed"
+            exit 1
+          fi
+      
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          cname: rsrevolution.es

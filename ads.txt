@@ -1,0 +1,3 @@
+# DEPRECATED: Google AdSense credentials removed for security reasons
+# Replaced with centralized config.js for sensitive data management
+# See SECURITY.md for more information

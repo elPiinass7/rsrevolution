@@ -1,0 +1,589 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 76px;
+    background: rgba(0, 0, 0, 0.782);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+:root {
+    --slider-gap: clamp(10px, 2.5vw, 25px);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 40vh;
+    max-height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-track {
+    display: flex;
+    gap: var(--slider-gap);
+    transition: transform 0.5s ease;
+    will-change: transform;
+    height: 100%;
+}
+
+.slide {
+    flex-shrink: 0;
+    position: relative;
+    width: 40vh;
+    max-width: 350px;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.slide.active img {
+    transform: scale(1);
+    filter: brightness(1.1);
+}
+.slide:not(.active) img {
+    transform: scale(0.85);
+    filter: brightness(0.6);
+}
+@media (min-width: 768px) {
+    .slider-container {
+        height: 60vh;
+        max-height: 550px;
+    }
+    .slide {
+        width: 60vh;
+        max-width: 550px;
+    }
+}
+#slider-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #34b1ff;
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: spinRS 1s linear infinite;
+}
+@keyframes spinRS {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.spinner-text {
+    color: white;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+}
+.navbar {
+    background: linear-gradient(to left, #013bfa, #34b1ff) !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-link.has-text-white {
+    color: white !important;
+}
+.navbar-toggler {
+    margin-left: auto;
+}
+
+
+
+
+
+
+.btn-eventos-new {
+    background-color: #34b1ff !important;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-eventos-new:hover {
+    background-color: #013bfa !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 177, 255, 0.3);
+}
+
+
+
+
+
+
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(to bottom right, #34b1ff, #013bfa);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    padding: 0;
+}
+#scrollTopBtn:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 576px) {
+    #scrollTopBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 12px;
+    }
+}
+.text-center {
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+.destacable {
+    color: #36b4fd;
+}
+.dynamic-text {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blink-caret 0.7s step-end infinite;
+}
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+.email-link {
+    color: white !important;
+    background-color: rgba(0,0,0,0.5);
+    padding: 3px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+footer {
+    background: linear-gradient(to left, #013bfa, #34b1ff); 
+    margin-top: auto;
+    padding: 40px 20px;
+    color: white;
+}
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 10px;
+}
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+footer .contact-form {
+    max-width: 350px;            
+    margin: 20px auto;           
+    padding: 15px;               
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+footer .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+footer .contact-form input,
+    footer .contact-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+footer .contact-form input:focus,
+    footer .contact-form textarea:focus {
+        border-color: #2caeff;
+    }
+footer .contact-form input::placeholder,
+    footer .contact-form textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+footer .contact-form button {
+    width: 100%;
+    background-color: #2caeff;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+footer .contact-form button:hover {
+    background-color: #011efa;
+}
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+footer .social-icons a img {
+    width: 40px;
+    height: 40px;
+}
+@media (max-width: 768px) {
+    .slider-container {
+        height: 45vh !important;
+        max-height: 400px !important;
+    }
+    .slide {
+        width: 80vw !important;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem !important;
+    }
+    
+    footer .social-icons {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* --- ESTILOS HERO VIDEO (EVENTO YOUNGTIMERS) --- */
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Ocupará el 80% de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+    object-fit: cover; /* Asegura que el vídeo llene el espacio sin deformarse */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Capa oscura para que el texto sea legible */
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .hero-video-section {
+        min-height: 60vh;
+    }
+    .hero-content h1.title {
+        font-size: 2rem !important; /* Texto más pequeño en móvil */
+    }
+    .hero-content h2.subtitle {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* --- SWITCH FOTOS / EVENTOS --- */
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.switch-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #888; /* Color apagado por defecto */
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+/* Colores cuando están activos */
+.switch-text.active-blue { color: #34b1ff; text-shadow: 0 0 8px rgba(52, 177, 255, 0.5); }
+.switch-text.active-gold { color: #FFD700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5); }
+
+/* El botón deslizable */
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to left, #013bfa, #34b1ff); /* Azul por defecto */
+    border-radius: 30px;
+    transition: .4s;
+    box-shadow: 0 0 10px rgba(52, 177, 255, 0.4);
+}
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+/* Estado del Switch cuando se activa (Dorado) */
+.custom-switch input:checked + .switch-slider {
+    background: linear-gradient(to right, #FFD700, #D4AF37);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+.custom-switch input:checked + .switch-slider:before {
+    transform: translateX(30px);
+}
+
+/* =========================================
+   1. AJUSTES RESPONSIVE (MÓVILES)
+========================================= */
+@media (max-width: 768px) {
+    .hero-video-section h1 {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+        padding: 0 10px;
+    }
+    .hero-video-section .hero-content {
+        padding-top: 40px !important;
+    }
+    .yt-hero-btn {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+    }
+    .hero-video-section {
+        height: auto !important;
+        min-height: 60vh !important;
+        padding-bottom: 40px !important;
+    }
+}
+
+/* =========================================
+   2. SWITCH FOTOS ↔ EVENTOS (NAVBAR)
+========================================= */
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.switch-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.switch-text.active-blue { color: #34b1ff; text-shadow: 0 0 8px rgba(52, 177, 255, 0.5); }
+.switch-text.active-gold { color: #FFD700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.5); }
+
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to left, #013bfa, #34b1ff);
+    border-radius: 30px;
+    transition: .4s;
+    box-shadow: 0 0 10px rgba(52, 177, 255, 0.4);
+}
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+.custom-switch input:checked + .switch-slider {
+    background: linear-gradient(to right, #FFD700, #D4AF37);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+.custom-switch input:checked + .switch-slider:before {
+    transform: translateX(30px);
+}
+
+body.gold-theme { background-color: #0d0d0d !important; }
+
+body.gold-theme .navbar { background: linear-gradient(to left, #D4AF37, #FFD700) !important; }
+body.gold-theme .navbar .nav-link { color: #000 !important; font-weight: bold; text-decoration: none !important; }
+body.gold-theme .navbar .nav-link:hover { text-decoration: none !important; color: #333 !important; }
+body.gold-theme .navbar-brand img, body.gold-theme .navbar-toggler-icon { filter: brightness(0); }
+body.gold-theme footer { background: linear-gradient(to left, #D4AF37, #FFD700) !important; }
+body.gold-theme footer * { color: #000 !important; font-weight: bold; text-decoration: none !important; }
+body.gold-theme footer hr { border-color: #000 !important; }
+
+body.gold-theme h1, body.gold-theme h2, body.gold-theme h3, body.gold-theme h4, body.gold-theme h5, body.gold-theme h6,
+body.gold-theme .title, body.gold-theme .subtitle { color: #fff !important; }
+body.gold-theme p a, body.gold-theme li a { color: #FFD700 !important; text-decoration: underline; }
+body.gold-theme p a:hover { color: #D4AF37 !important; }
+
+body.gold-theme .contact-form label { color: #fff !important; font-weight: bold; }
+body.gold-theme .contact-form .input, body.gold-theme .contact-form .textarea {
+    color: #fff !important; border-color: rgba(255, 215, 0, 0.4) !important;
+}
+body.gold-theme .contact-form .input:focus, body.gold-theme .contact-form .textarea:focus {
+    border-color: #FFD700 !important; box-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+}
+body.gold-theme .contact-form .input::placeholder, body.gold-theme .contact-form .textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.gold-theme button[type="submit"], body.gold-theme .button.is-link {
+    background: linear-gradient(to right, #FFD700, #D4AF37) !important; 
+    color: #000 !important; font-weight: bold !important; border: none !important;
+}
+body.gold-theme button[type="submit"]:hover, body.gold-theme .button.is-link:hover {
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.6) !important; transform: scale(1.02);
+}
+
+body.gold-theme .switch-text { color: #555 !important; }
+body.gold-theme .switch-text.active-gold { color: #000 !important; text-shadow: none !important; }
+
+body.gold-theme .nav-foto-only { display: none !important; }
+
+body.gold-theme .destacable {
+    color: #FFD700 !important;
+}
+
+body.gold-theme .card {
+    border-bottom-color: #FFD700 !important;
+}
+
+body.gold-theme .column.is-5 img {
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4) !important;
+}
+
+body.gold-theme #scrollTopBtn {
+    background: linear-gradient(to bottom right, #FFD700, #D4AF37) !important;
+    color: #000 !important;
+    border: 1px solid rgba(0,0,0,0.2) !important;
+}
+
+body.gold-theme footer p a {
+    color: #000 !important;
+    text-decoration: underline !important; 
+}
+
+body.gold-theme footer p a:hover {
+    color: #333 !important;
+}
+
+body.gold-theme footer h6,
+body.gold-theme footer .has-text-white {
+    color: #000 !important;
+}

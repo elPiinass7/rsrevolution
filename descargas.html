@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descarga las fotografías de los últimos eventos de motor. Accede a las galerías temporales de drift, clásicos y concentraciones de RS Revolution." />
+    <meta name="keywords" content="descargar fotos motor, eventos rs revolution, fotos drift valladolid, fotos clásicos viana, descargas fotografía motor" />
+    <meta name="author" content="RS Revolution" />
+    <link rel="canonical" href="https://rsrevolution.es/eventos.html" />
+    <title>RS Revolution - Eventos y Descargas</title>
+
+    <meta property="og:title" content="RS Revolution - Eventos y Descargas" />
+    <meta property="og:description" content="Revive la pasión del motor. Descarga las fotos de las últimas quedadas y track days en alta calidad." />
+    <meta property="og:image" content="https://rsrevolution.es/galeria/img/Portada_RoadStrBreakfastVall2025.webp" />
+    <meta property="og:url" content="https://rsrevolution.es/eventos.html" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print" onload="this.onload=null;this.media='all';" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.onload=null;this.media='all';" />
+    <link rel="stylesheet" href="cssFotogr/style.css" />
+    <link rel="stylesheet" href="galeria/style.css" />
+    <link rel="shortcut icon" href="img/RS_RevICO.ico" type="image/x-icon" />
+    <script src="jsFotogr/load-config.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0FLF50C05Z');</script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <button aria-label="Volver arriba" id="scrollTopBtn" onclick="scrollToTop()" title="Volver arriba">↑</button>
+
+    <div id="tacho-loader-wrapper">
+      <svg height="120" id="tacometro" viewbox="0 0 200 200" width="120">
+        <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#34b1ff" stroke-width="8"></path>
+        <line id="aguja" stroke="#ff4141" stroke-linecap="round" stroke-width="4" transform="rotate(-90, 100, 100)" x1="100" x2="100" y1="100" y2="30"></line>
+        <circle cx="100" cy="100" fill="#ffffff" r="6"></circle>
+      </svg>
+      <span class="tacho-text">Calentando motores...</span>
+    </div>
+
+    <nav class="navbar navbar-expand-lg position-fixed w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="fotografia.html">
+          <img alt="Logo de RS Revolution" height="75" src="img/RS_RevAFR.webp?quality=65" width="75" />
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarColor03">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link has-text-white" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link active has-text-white" href="descargas.html">Descargas</a></li>
+            <li class="nav-item"><a class="nav-link has-text-white" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link has-text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item me-3"><a class="nav-link has-text-white" href="privacidad.html">Política de Privacidad</a></li>
+              <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                  <div class="switch-container">
+                      <span class="switch-text" id="text-foto">FOTOS</span>
+                      <label class="custom-switch">
+                          <input type="checkbox" id="pageSwitch" onchange="togglePage(this)">
+                          <span class="switch-slider"></span>
+                      </label>
+                      <span class="switch-text" id="text-event">EVENTOS</span>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center py-5" style="padding-top: 100px">
+      <h1 class="title has-text-white">Eventos y Descargas</h1>
+      <span class="subtitle has-text-grey-light">
+        Revive los mejores momentos y descarga tus fotografías de los <span class="destacable">ÚLTIMOS EVENTOS</span>
+      </span>
+    </header>
+
+    <main class="container my-5">
+      <section class="text-center bg-dark text-white py-4 px-3" style="border-radius: 15px;">
+        <p class="mb-5">
+          Revive la pasión del motor a través de nuestras coberturas. Aquí encontrarás las crónicas visuales de los eventos más recientes en <strong class="has-text-white">España</strong>, disponibles para descarga directa por tiempo limitado.
+        </p>
+        <div class="row gy-5 justify-content-center">
+            
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Clásicos Portillo 2025" class="img-fluid fotosPerm" src="galeria/img/GaleriaProx.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos Cigales 2026</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">En el pueblo de Cigales, se celebra todos los años la concentración de <strong class="has-text-white">Clásicos</strong>. Un evento Donde varios entusiastas se reunen para enseñar sus automóviles más icónicos como el Porsche 944, el Toyota Célica o incluso el gran conocido Hyundai Coupé. <strong class="has-text-white">PRÓXIMAMENTE</strong>.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://rsrevolution.es" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+            
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Clásicos Portillo 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_Autopia_2026.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Autopía 2026</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">En el Bosque de Santander de Boadilla del Monte, se celebra <strong class="has-text-white">Autopía</strong>, Un evento con una gran diversidad, emoción y mucha cultura de la que aprender. Desde un Golf GTI hasta el más elegante Aston Martin Vantage. Ha sido una de las ediciones más grandes, con más de 20.000 asistentes. Recomendado ir 1 vez en la vida.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1-sE3xFhZZHdKboNxH1qIVzFR5gZAr4R5?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+            
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Fotografías del Evento de Fast and Nice en Kotarr de 2026." class="img-fluid fotosPerm" src="galeria/img/Portada_FastAndNice2026.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Fast & Nice 2026</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">Desafiando un febrero de viento insoportable, la esencia de <strong class="has-text-white">Fast and Nice</strong> volvió a brillar con luz propia. Una jornada marcada por la resistencia y el entusiasmo, donde los motores no dejaron de rugir para alegrar el día a los verdaderos apasionados. Un evento que se mantiene fiel a su cita anual y que regala momentos únicos. Simplemente imperdible.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal" data-drive-link="https://drive.google.com/drive/folders/1Y82bEw0pnpjvHtc1QVhE2k0l8CeN0eez?usp=drive_link">📥 Descargar Fotos</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img alt="RoadStr Breakfast Valladolid 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_RoadStrBreakfastVall2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">RoadStr Breakfast Valladolid</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">Una mañana espectacular en <strong class="has-text-white">Valladolid</strong> donde la comunidad RoadStr se reunió para compartir pasión y gasolina. Capturamos desde superdeportivos modernos hasta clásicos restaurados, enfocándonos en la convivencia y el detalle estético de cada máquina bajo la luz matinal. Un encuentro imprescindible para los amantes del motor.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/19xLPbN0OMXqscXWPW2MAaxHCeW8_risM?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img alt="BMWs M Kotarr 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_Kotarr20dic2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">BMWs M Kotarr 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">Día de pista en el <strong class="has-text-white">Circuito de Kotarr</strong> dedicado a la división M de BMW. La jornada estuvo marcada por el rugido de los motores y la precisión en las trazadas. Inmortalizamos el dinamismo y la potencia de estos vehículos en su hábitat natural, capturando la esencia de la ingeniería alemana en cada curva del trazado.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1LJ5Er4xFfSvpNS6cR8NV7WFfXbbwqGWq?usp=drive_link" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Gum Clouds 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_GumClouds_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Gum Clouds 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">Pura cultura del <strong class="has-text-white">Drift</strong>. En Gum Clouds nos centramos en capturar las nubes de humo y los ángulos imposibles. Una cobertura técnica donde la velocidad de obturación fue clave para congelar la agresividad de los pilotos en pista y la densidad de las nubes de goma quemada sobre el asfalto del circuito.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="#" data-bs-toggle="modal" data-bs-target="#downloadModal" data-drive-link="https://drive.google.com/drive/folders/1gX-6cr-_mJFjcRcO6JptMuEnCD_zfE2v?usp=drive_link">📥 Descargar Fotos</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Meet And Cars Tres Cantos 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_MeetAndCars_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Meet And Cars 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">Nos desplazamos a <strong class="has-text-white">Tres Cantos</strong> para una de las concentraciones multimarca más variadas del año. JDM, Muscle Cars y proyectos Euro se dieron cita, permitiéndonos realizar un reportaje variado centrado en las modificaciones personalizadas y la cultura urbana del automóvil que se respira en cada proyecto.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1oLvGW-Zg6e2WMWp-NpHSEu9r4BJDVUpC?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Drift Day and Night FK1 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_2Fast2EventsDriftDayFK1_2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Drift Day & Night FK1</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">El <strong class="has-text-white">Circuito FK1</strong> fue el escenario de una transición épica de luz. Desde el sol de la tarde hasta los focos nocturnos, nuestras capturas reflejan cómo cambia la estética del drift cuando cae la noche en Valladolid, resaltando los frenos al rojo vivo y la iluminación técnica del trazado.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1ipmsd_fvo7gw_UJj-CNvgYw9qjZChMBi?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center">
+            <img alt="Clásicos La Seca 2025" class="img-fluid fotosPerm" src="galeria/img/Portada_ClasicosLaSeca2025.webp?quality=60" width="480" height="320" loading="lazy">
+            <h4 class="mt-3 has-text-white" style="font-family: 'Oswald'; text-transform: uppercase;">Clásicos La Seca 2025</h4>
+            <p class="has-text-grey-light is-size-7 mt-2 px-2" style="text-align: justify;">Joyas del automovilismo histórico en <strong class="has-text-white">La Seca</strong>. Cubrimos esta reunión de vehículos históricos poniendo el foco en los detalles de restauración y la conservación de estas piezas de ingeniería que siguen rugiendo con orgullo por las carreteras vallisoletanas décadas después de su fabricación.</p>
+            <div class="my-3" data-aos="fade-up">
+              <a class="btn btn-outline-light download-btn" href="https://drive.google.com/drive/folders/1AGIJ543d3rYrJ7mt41fQ-fYuK_D188u6?usp=sharing" target="_blank">📥 Descargar Fotos</a>
+            </div>
+          </div>
+            
+        </div> </section>
+    </main>
+
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Opciones de Descarga</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modal-choice-view">
+              <p class="text-center">Elige el tipo de descarga que prefieres:</p>
+              <a id="modal-download-watermark" href="#" target="_blank" class="btn btn-outline-light download-btn w-100 mb-3">Con Marca de Agua (Gratis)</a>
+              <button id="modal-show-contact" class="btn btn-success w-100">Sin Marca de Agua (Contacto)</button>
+            </div>
+            <div id="modal-contact-view" style="display: none;">
+              <p>Contacta conmigo para obtener las fotos en alta resolución:</p>
+              <a href="https://instagram.com/rsrevolution_" target="_blank" class="btn btn-contact-insta w-100 mb-3">
+                <img src="img/instagram.webp" alt="Insta" width="20"> Instagram
+              </a>
+              <button id="modal-contact-form-btn" class="btn btn-light w-100 mb-3">Ir al Formulario</button>
+              <button id="modal-back-button" class="btn btn-outline-secondary w-100 mt-2">← Volver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center my-5">
+      <!--<p style="font-size: 10px; color: #666; letter-spacing: 2px;">PUBLICIDAD</p> -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1734020818189817" data-ad-slot="6506708683" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer style="background: linear-gradient(to left, #013bfa, #34b1ff); color: #fff;">
+      <div class="container">
+        <div class="row align-items-center" style="min-height: 300px">
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+            <h4>Síguenos</h4>
+            <div class="social-icons d-flex gap-3 mb-3">
+              <a href="https://instagram.com/rsrevolution_" target="_blank"><img alt="Insta" height="40" src="img/instagram.webp" width="40" /></a>
+              <a href="https://tiktok.com/@rsrevolution_" target="_blank"><img alt="TikTok" height="40" src="img/tiktok.webp" width="40" /></a>
+              <a href="https://x.com/rsrevolution_" target="_blank"><img alt="X" height="40" src="img/x.webp" width="40" /></a>
+            </div>
+            <hr class="w-50" />
+            <p class="has-text-white mt-3" style="max-width: 400px; text-align: justify">
+              <strong>Condiciones de uso de las imágenes</strong><br />
+              Todas las fotografías publicadas en este sitio web son propiedad de RS Revolution (D.V.). Prohibido su uso comercial sin permiso previo.<br />
+              <a href="https://rsrevolution.es/condiciones.html" style="text-decoration: underline; color: #fff;">Ver todos los términos y condiciones</a>
+            </p>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+            <h2>Contacto</h2>
+            <form class="contact-form" id="contact-form">
+              <label for="name">Nombre:</label>
+              <input id="name" name="from_name" required="" type="text" />
+              <label for="email">Correo:</label>
+              <input id="email" name="reply_to" required="" type="email" />
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" required=""></textarea>
+              <div class="g-recaptcha" data-sitekey="6LcgmdwqAAAAAEOIXf2Ctg2pB16QMLM1ZQi7BTJ-" data-theme="dark"></div>
+              <button class="mt-3" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h6 class="text-center has-text-white justify-content-center align-items-center mx-auto">© <script>document.write(new Date().getFullYear());</script> RS Revolution</h6>
+      <hr />
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="galeria/script.js" defer></script>
+    <script src="jsFotogr/script.js" defer></script>
+    <script src="jsFotogr/scriptSubir.js" defer></script>
+    <script src="jsFotogr/scriptFormulario.js" defer></script>
+    <script>
+      window.addEventListener("load", () => {
+        AOS.init({ duration: 800, once: true });
+      });
+    </script>
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+</html>
