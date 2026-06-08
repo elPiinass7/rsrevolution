@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sección de Eventos - RS Revolution. Próximamente activo." />
+    <meta name="description" content="Inscripción al Evento Youngtimers Laguna de Duero 2026. Organizado por RS Revolution y Talleres Rueda." />
     <meta name="author" content="RS Revolution" />
-    <title>Eventos - RS Revolution (Próximamente)</title>
+    <title>Evento Youngtimers Laguna de Duero 2026</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="sobreNosotros_Privacidad/style.css" />
     <link rel="stylesheet" href="cssFotogr/style.css" />
     <link rel="shortcut icon" href="img/RS_RevICO.ico" type="image/x-icon" />
 
@@ -23,87 +23,167 @@
         }
         .navbar { background: linear-gradient(to left, var(--yt-gold-dark), var(--yt-gold)) !important; }
         .navbar .nav-link { color: #000 !important; font-weight: bold; }
+        #scrollTopBtn { background: linear-gradient(to bottom right, var(--yt-gold), var(--yt-gold-dark)) !important; color: #000 !important; }
         footer { background: linear-gradient(to left, var(--yt-gold-dark), var(--yt-gold)) !important; }
         footer h6 { color: #000 !important; font-weight: bold; }
         
+        .border-gold { border-left: 4px solid var(--yt-gold) !important; }
         .yt-glass-card {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-radius: 20px;
             border: 1px solid rgba(255, 215, 0, 0.3);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
         }
+        .btn-yt {
+            background: linear-gradient(to right, var(--yt-gold), var(--yt-gold-dark)) !important;
+            color: #000 !important; border: none; font-family: 'Oswald', sans-serif;
+            text-transform: uppercase; font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-yt:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6); }
 
         .background-image {
             position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            object-fit: cover; z-index: -1; opacity: 0.4; filter: grayscale(80%);
+            object-fit: cover; z-index: -1; opacity: 0.6; filter: grayscale(80%);
         }
-        body { background-color: #0d0d0d; display: flex; flex-direction: column; min-height: 100vh; }
+        body { background-color: #111; animation: fadeIn 0.5s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        #youngtimers-form input::placeholder, #youngtimers-form textarea::placeholder { color: rgba(255, 255, 255, 0.65) !important; opacity: 1; }
+        #youngtimers-form input, #youngtimers-form textarea { color: #ffffff !important; }
         
         .navbar-brand img, .navbar-toggler-icon { filter: brightness(0); }
         .switch-text { color: #555; }
     </style>
 </head>
 <body>
+  <div id="pulse-overlay"></div>
+  <div id="blackout"></div>
     <img src="img/fondoSobreNosotros.webp?quality=90" alt="Fondo" class="background-image" />
 
-    <nav class="navbar navbar-expand-lg position-fixed w-100" style="background: linear-gradient(to left, #D4AF37, #FFD700) !important; z-index: 999;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="eventos.html">
-                <img src="img/RS_RevAFR.webp" alt="Logo" width="75" height="75" style="filter: brightness(0);" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" style="filter: brightness(0);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Volver arriba">↑</button>
+
+    <nav class="navbar navbar-expand-lg position-fixed w-100" style="z-index: 1000;">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
             
-            <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="contacto.html" style="color: #000 !important; font-weight: bold;">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobreNosotros.html" style="color: #000 !important; font-weight: bold;">Sobre nosotros</a></li>
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand me-1 me-md-2" href="fotografia.html">
+                    <img src="img/RS_RevAFR.webp" alt="Logo" width="65" height="65" class="d-inline-block" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 mt-lg-0 text-start text-lg-center">
+                    <li class="nav-item nav-foto-only"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item nav-foto-only"><a class="nav-link" href="descargas.html">Descargas</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobreNosotros.html">Sobre nosotros</a></li>
                 </ul>
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <div class="switch-container">
-                            <span class="switch-text" id="text-foto" style="color: #555;">FOTOS</span>
-                            <label class="custom-switch">
-                                <input type="checkbox" id="pageSwitch" onchange="togglePage(this)">
-                                <span class="switch-slider"></span>
-                            </label>
-                            <span class="switch-text" id="text-event" style="color: #555;">EVENTOS</span>
-                        </div>
-                    </li>
+                
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start text-lg-center pe-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="privacidad.html">Política de Privacidad</a></li>
                 </ul>
             </div>
+
+            <div class="d-flex align-items-center justify-content-end switch-nav-wrapper">
+                <div class="switch-container">
+                    <span class="switch-text text-uppercase" id="text-foto">Fotos</span>
+                    <label class="custom-switch">
+                        <input type="checkbox" id="pageSwitch" onchange="togglePage(this)">
+                        <span class="switch-slider"></span>
+                    </label>
+                    <span class="switch-text text-uppercase" id="text-event">Eventos</span>
+                </div>
+            </div>
+
         </div>
     </nav>
 
-    <main class="container my-auto d-flex align-items-center justify-content-center" style="padding-top: 140px; padding-bottom: 40px; flex: 1;">
-        <div class="row justify-content-center w-100">
-            <div class="col-md-8 col-lg-6 text-center">
-                <div class="yt-glass-card p-5">
-                    <h1 class="display-5 fw-bold mb-3" style="color: var(--yt-gold); font-family: 'Oswald'; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">
-                        PRÓXIMAMENTE
-                    </h1>
-                    <div style="width: 60px; height: 3px; background: var(--yt-gold); margin: 0 auto 25px auto;"></div>
-                    <h3 class="text-white h5 mb-4" style="font-family: 'Oswald'; letter-spacing: 1px; font-weight: 300;">
-                        SECCIÓN EN MANTENIMIENTO
-                    </h3>
-                    <p class="text-secondary small mb-0" style="line-height: 1.6;">
-                        Estamos calentando motores y poniendo a punto los últimos detalles de la organización. Muy pronto abriremos de forma oficial el calendario de eventos y el formulario de inscripciones. ¡Permanece atento!
-                    </p>
+    <header class="text-center py-5" style="padding-top: 150px !important;">
+      <h4 class="text-white" style="font-family: 'Oswald'; letter-spacing: 3px; font-weight: 300;">RS REVOLUTION & TALLERES RUEDA JM PRESENTAN</h4>
+      <h1 class="display-4 fw-bold mt-2" style="color: var(--yt-gold); font-family: 'Oswald'; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">
+        YOUNGTIMERS LAGUNA DE DUERO 2026
+      </h1>
+    </header>
+
+    <main class="container my-5">
+      <section class="row justify-content-center">
+        <div class="col-md-11 col-lg-10">
+          <div class="yt-glass-card p-4 p-md-5">
+            <div class="row">
+              <div class="col-md-5 mb-5 mb-md-0 border-end border-secondary border-opacity-25">
+                <h3 class="h4 text-white border-gold px-3" style="font-family: 'Oswald';">INFORMACIÓN OFICIAL</h3>
+                <p class="text-secondary small mb-4 mt-3">Exposición exclusiva para vehículos del periodo 1990 - 2005.</p>
+                <div class="mb-3"><p class="text-white fw-bold mb-1">Localización</p><p class="text-secondary small">Entorno del Lago, Laguna de Duero</p></div>
+                <div class="mb-3"><p class="text-white fw-bold mb-1">Fecha y Horario</p><p class="text-secondary small">Pórtico Fiestas 2026 | 10:00h - 14:00h</p></div>
+                <div class="mb-4"><p style="color: var(--yt-gold);" class="fw-bold mb-1">⚠️ Aforo Limitado</p><p class="text-secondary small">75 vehículos rigurosamente seleccionados.</p></div>
+              </div>
+
+              <div class="col-md-7 ps-md-5">
+                <h3 class="h4 text-white border-gold px-3 mb-4" style="font-family: 'Oswald';">SOLICITUD DE INSCRIPCIÓN</h3>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { document.getElementById('youngtimers-form').style.display='none'; document.getElementById('mensaje-exito').style.display='block'; }"></iframe>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdO-9ne7va5hkWo2JB4mAopmmNtpoF7sc7-3wuwOCbPTCw3Zg/formResponse" method="POST" target="hidden_iframe" id="youngtimers-form" onsubmit="submitted=true; this.querySelector('button[type=submit]').disabled=true; this.querySelector('button[type=submit]').innerText='ENVIANDO...';">
+                  
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label text-white small">Nombre y Apellidos</label>
+                      <input type="text" name="entry.724787085" class="form-control bg-transparent text-white border-secondary" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label class="form-label text-white small">Teléfono</label>
+                      <input type="tel" name="entry.1928829284" class="form-control bg-transparent text-white border-secondary" required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <label class="form-label text-white small">Marca</label>
+                      <input type="text" name="entry.994385908" class="form-control bg-transparent text-white border-secondary" placeholder="Ej: BMW" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label class="form-label text-white small">Modelo</label>
+                      <input type="text" name="entry.400667671" class="form-control bg-transparent text-white border-secondary" placeholder="Ej: M3 E36" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label class="form-label text-white small">Año</label>
+                      <input type="number" name="entry.1141132983" min="1990" max="2005" class="form-control bg-transparent text-white border-secondary" placeholder="1995" required>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="form-label text-white small">Foto del Coche (Enlace)</label>
+                    <input type="url" name="entry.1985271647" class="form-control bg-transparent text-white border-secondary" placeholder="URL de Instagram o Drive">
+                  </div>
+
+                  <button type="submit" class="btn btn-yt w-100 py-2">ENVIAR SOLICITUD</button>
+                </form>
+                <div id="mensaje-exito" class="mt-4 p-3" style="display: none; background: rgba(255, 215, 0, 0.1); border: 1px solid var(--yt-gold); border-radius: 10px;">
+                  <h5 style="color: var(--yt-gold);" class="mb-2">¡Solicitud recibida!</h5>
+                  <p class="text-white small mb-0">Revisaremos la información de tu vehículo y nos pondremos en contacto contigo para confirmar la plaza.</p>
                 </div>
+                <script>var submitted = false;</script>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
     </main>
 
     <footer class="py-4 mt-auto">
-        <div class="container text-center">
-            <h6 class="mb-0">© <script>document.write(new Date().getFullYear());</script> RS Revolution & Talleres Rueda JM</h6>
-        </div>
+      <div class="container text-center">
+        <h6 class="mb-0">© <script>document.write(new Date().getFullYear());</script> RS Revolution & Talleres Rueda JM</h6>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="jsFotogr/script.js" defer></script>
+    <script src="jsFotogr/scriptSubir.js" defer></script>
 </body>
 </html>
