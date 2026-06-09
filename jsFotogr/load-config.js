@@ -1,7 +1,3 @@
-// ⚠️ IMPORTANTE: Este archivo carga claves desde variables de entorno
-// En desarrollo local: Las claves vienen de .env.local (servidor necesario)
-// En producción: Las claves vienen de config-deploy.json (GitHub Pages)
-
 window.CONFIG = window.CONFIG || {
   emailjs: {
     publicKey: window.ENV?.VITE_EMAILJS_PUBLIC_KEY || '',
@@ -16,7 +12,6 @@ window.CONFIG = window.CONFIG || {
   }
 };
 
-// Si no hay ENV (GitHub Pages), intentar cargar de config-deploy.json
 if (!window.CONFIG.emailjs.publicKey) {
   fetch('../config-deploy.json')
     .then(r => r.json())
@@ -43,7 +38,6 @@ if (!window.CONFIG.emailjs.publicKey) {
     });
 }
 
-// Verificar si las claves están configuradas
 if (window.CONFIG.emailjs.publicKey) {
   console.log('✅ Configuración cargada correctamente');
 } else {
