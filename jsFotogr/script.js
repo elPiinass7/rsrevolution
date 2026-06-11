@@ -1,4 +1,3 @@
-// 1. LOADER DE LA PÁGINA
 window.addEventListener("load", () => {
   const loader = document.getElementById("slider-loader");
   if (loader) {
@@ -7,11 +6,9 @@ window.addEventListener("load", () => {
   }
 });
 
-// 2. CARRUSEL DE FOTOS
 document.addEventListener("DOMContentLoaded", () => {
   const sliderTrack = document.getElementById("sliderTrack");
   
-  // ¡EL ESCUDO PROTECTOR DEL CARRUSEL! 🛡️
   if (!sliderTrack) return; 
 
   const slides = document.querySelectorAll(".slide");
@@ -46,11 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", () => updateSliderPosition(false));
 });
 
-// 3. TEXTO DINÁMICO (MÁQUINA DE ESCRIBIR)
 document.addEventListener("DOMContentLoaded", () => {
   const textElement = document.getElementById("changing-text");
   
-  // ¡EL ESCUDO PROTECTOR DEL TEXTO! 🛡️
   if (!textElement) return;
 
   const words = ["PASIÓN", "POTENCIA", "VELOCIDAD", "CALIDAD"];
@@ -80,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
   typeEffect();
 });
 
-// 4. MODO CAMALEÓN (TEMA GOLD / BLUE)
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("pageSwitch");
     const textFoto = document.getElementById("text-foto");
