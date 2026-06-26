@@ -25,10 +25,16 @@ body, html {
     display: block;
 }
 
-.split-bg {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    background-size: cover; background-position: center;
-    transition: transform 0.8s ease; z-index: 1;
+.split-bg-video {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease; 
+    z-index: 1;
 }
 
 .split-overlay {
@@ -58,7 +64,6 @@ body, html {
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%); 
     z-index: 10; 
 }
-.split-left .split-bg { background-image: url('../img/img1.webp'); } 
 .split-left .split-overlay { background: linear-gradient(to left, #013bfa, #34b1ff); }
 .split-left .split-content {
     left: -25%; 
@@ -70,7 +75,6 @@ body, html {
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 45% 100%); 
     z-index: 9; 
 }
-.split-right .split-bg { background-image: url('../img/img2.webp'); } 
 .split-right .split-overlay { background: linear-gradient(to right, #FFD700, #D4AF37); }
 .split-right .split-content {
     left: 25%; 
@@ -88,7 +92,7 @@ body, html {
 }
 
 @media (min-width: 769px) {
-    .split:hover .split-bg { transform: scale(1.08); }
+    .split:hover .split-bg-video { transform: scale(1.08); }
     .split:hover .split-overlay { opacity: 0.65; }
 
     .split-left:hover {
@@ -114,7 +118,7 @@ body, html {
     .split-left .split-content { left: 0; top: 20%; transform: translateY(0); }
     .split-right .split-content { left: 0; top: 70%; transform: translateY(0); }
     
-    .split:hover .split-bg, .split:active .split-bg { transform: scale(1.05); }
+    .split:hover .split-bg-video, .split:active .split-bg-video { transform: scale(1.05); }
     
     .split-left:hover, .split-left:active { 
         clip-path: polygon(0 0, 100% 0, 100% 65%, 0 55%); 
@@ -131,14 +135,4 @@ body, html {
     .split-right:hover .split-content, .split-right:active .split-content { 
         transform: scale(1.05); 
     }
-}
-
-.split-left .split-bg { 
-    background-image: url('../img/img1.webp'); 
-    background-position: 70% center;
-} 
-
-.split-right .split-bg { 
-    background-image: url('../img/img2.webp'); 
-    background-position: 30% center;
 }
