@@ -14,6 +14,24 @@ body, html {
     height: 100dvh;
 }
 
+/* VÍDEO ÚNICO DE FONDO */
+.main-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Centrado perfecto siempre */
+    z-index: 0; /* Al fondo del todo */
+    transition: transform 0.8s ease;
+}
+
+/* Cuando pasas el ratón por cualquier parte, el vídeo hace un zoom súper sutil */
+.split-container:hover .main-bg-video {
+    transform: scale(1.05);
+}
+
 .split {
     position: absolute; 
     top: 0; 
@@ -23,18 +41,7 @@ body, html {
     overflow: hidden;
     transition: clip-path 0.6s cubic-bezier(0.25, 1, 0.5, 1), z-index 0.6s; 
     display: block;
-}
-
-.split-bg-video {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
-    object-fit: cover;
-    /* Hemos quitado de aquí el object-position: center para que no haga zoom ciego */
-    transition: transform 0.8s ease; 
-    z-index: 1;
+    z-index: 1; /* Por encima del vídeo */
 }
 
 .split-overlay {
@@ -60,13 +67,9 @@ body, html {
     text-shadow: 1px 1px 10px rgba(0,0,0,0.9); 
 }
 
-/* --- MITAD IZQUIERDA (FOTOGRAFÍA) --- */
+/* MITAD IZQUIERDA */
 .split-left { 
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%); 
-    z-index: 10; 
-}
-.split-left .split-bg-video {
-    object-position: 70% center; /* Encuadre personalizado para tu vídeo azul */
 }
 .split-left .split-overlay { background: linear-gradient(to left, #013bfa, #34b1ff); }
 .split-left .split-content {
@@ -75,13 +78,9 @@ body, html {
     transform: translateY(-50%);
 }
 
-/* --- MITAD DERECHA (EVENTOS) --- */
+/* MITAD DERECHA */
 .split-right { 
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 45% 100%); 
-    z-index: 9; 
-}
-.split-right .split-bg-video {
-    object-position: 30% center; /* Encuadre personalizado para tu vídeo dorado */
 }
 .split-right .split-overlay { background: linear-gradient(to right, #FFD700, #D4AF37); }
 .split-right .split-content {
@@ -99,9 +98,9 @@ body, html {
     pointer-events: none;
 }
 
+/* EFECTOS AL PASAR EL RATÓN (PANTALLAS GRANDES) */
 @media (min-width: 769px) {
-    .split:hover .split-bg-video { transform: scale(1.08); }
-    .split:hover .split-overlay { opacity: 0.65; }
+    .split:hover .split-overlay { opacity: 0.65; } /* Se vuelve más transparente para ver mejor el vídeo */
 
     .split-left:hover {
         clip-path: polygon(0 0, 65% 0, 55% 100%, 0 100%);
@@ -116,6 +115,7 @@ body, html {
     .split-right:hover .split-content { transform: translateY(-50%) scale(1.08); }
 }
 
+/* VERSIÓN MÓVIL */
 @media (max-width: 768px) {
     .split-left { clip-path: polygon(0 0, 100% 0, 100% 55%, 0 45%); }
     .split-right { clip-path: polygon(0 45%, 100% 55%, 100% 100%, 0 100%); }
@@ -125,8 +125,6 @@ body, html {
     
     .split-left .split-content { left: 0; top: 20%; transform: translateY(0); }
     .split-right .split-content { left: 0; top: 70%; transform: translateY(0); }
-    
-    .split:hover .split-bg-video, .split:active .split-bg-video { transform: scale(1.05); }
     
     .split-left:hover, .split-left:active { 
         clip-path: polygon(0 0, 100% 0, 100% 65%, 0 55%); 
