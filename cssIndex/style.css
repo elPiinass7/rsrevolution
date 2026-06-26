@@ -22,8 +22,11 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Centrado perfecto siempre */
-    z-index: 0; /* Al fondo del todo */
+    
+    /* ¡AQUÍ ESTÁ LA MAGIA! 👇 */
+    object-position: 80% center; 
+    
+    z-index: 0;
     transition: transform 0.8s ease;
 }
 
