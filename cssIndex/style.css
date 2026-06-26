@@ -32,7 +32,7 @@ body, html {
     width: 100%; 
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    /* Hemos quitado de aquí el object-position: center para que no haga zoom ciego */
     transition: transform 0.8s ease; 
     z-index: 1;
 }
@@ -60,9 +60,13 @@ body, html {
     text-shadow: 1px 1px 10px rgba(0,0,0,0.9); 
 }
 
+/* --- MITAD IZQUIERDA (FOTOGRAFÍA) --- */
 .split-left { 
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%); 
     z-index: 10; 
+}
+.split-left .split-bg-video {
+    object-position: 70% center; /* Encuadre personalizado para tu vídeo azul */
 }
 .split-left .split-overlay { background: linear-gradient(to left, #013bfa, #34b1ff); }
 .split-left .split-content {
@@ -71,9 +75,13 @@ body, html {
     transform: translateY(-50%);
 }
 
+/* --- MITAD DERECHA (EVENTOS) --- */
 .split-right { 
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 45% 100%); 
     z-index: 9; 
+}
+.split-right .split-bg-video {
+    object-position: 30% center; /* Encuadre personalizado para tu vídeo dorado */
 }
 .split-right .split-overlay { background: linear-gradient(to right, #FFD700, #D4AF37); }
 .split-right .split-content {
