@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     banner.innerHTML = `
         <p class="cookie-text">
-            Utilizamos cookies de rendimiento y telemetría para que la web vaya como un tiro. Tranquilo, no robamos tus datos ni se los vendemos a nadie. 🏎️💨 
+            En RS Revolution utilizamos cookies de rendimiento para analizar el tráfico y hacer que la web funcione a la perfección. Puedes aceptar todas para ayudarnos a optimizar el motor de la página, o quedarte solo con las esenciales. 
             <a href="privacidad.html" style="color: inherit; text-decoration: underline; margin-left: 5px;">Leer Política de Privacidad</a>.
         </p>
         <div class="cookie-buttons">
