@@ -61,11 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     updateBannerTheme();
-
-    const pageSwitch = document.getElementById("pageSwitch");
-    if (pageSwitch) {
-        pageSwitch.addEventListener("change", updateBannerTheme);
-    }
+    
+    setInterval(updateBannerTheme, 100);
 
     setTimeout(() => { banner.classList.add("show"); }, 1000);
 
