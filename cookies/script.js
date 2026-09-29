@@ -1,12 +1,36 @@
 document.addEventListener("DOMContentLoaded", function() {
-    if (localStorage.getItem("rs_cookies_consent")) return;
+    
+    function activarGoogleAnalytics() {
+        const script1 = document.createElement("script");
+        script1.async = true;
+        script1.src = "https://www.googletagmanager.com/gtag/js?id=G-0FLF50C05Z";
+        document.head.appendChild(script1);
+
+        const script2 = document.createElement("script");
+        script2.innerHTML = `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0FLF50C05Z');
+        `;
+        document.head.appendChild(script2);
+    }
+
+    const consentimiento = localStorage.getItem("rs_cookies_consent");
+    
+    if (consentimiento) {
+        if (consentimiento === "aceptadas") {
+            activarGoogleAnalytics();
+        }
+        return;
+    }
 
     const banner = document.createElement("div");
     banner.id = "cookie-banner";
     
     banner.innerHTML = `
         <p class="cookie-text">
-            En RS Revolution utilizamos cookies de rendimiento para analizar el tráfico y hacer que la web funcione a la perfección. Puedes aceptar todas para ayudarnos a optimizar el motor de la página, o quedarte solo con las esenciales. 
+            En RS Revolution utilizamos cookies de rendimiento para analizar el tráfico y hacer que la web funcione a la perfección. Puedes aceptar todas para ayudarnos a optimizar el motor de la página, o quedarte solo con las esenciales.
             <a href="privacidad.html" style="color: inherit; text-decoration: underline; margin-left: 5px;">Leer Política de Privacidad</a>.
         </p>
         <div class="cookie-buttons">
@@ -48,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btnAceptar.addEventListener("click", function() {
         localStorage.setItem("rs_cookies_consent", "aceptadas");
         banner.classList.remove("show");
+        activarGoogleAnalytics();
     });
 
     btnRechazar.addEventListener("click", function() {
