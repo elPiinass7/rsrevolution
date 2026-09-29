@@ -1,0 +1,58 @@
+#cookie-banner {
+    position: fixed;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999999;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.9);
+    transition: bottom 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#cookie-banner.show {
+    bottom: 0;
+}
+
+.cookie-text {
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.5px;
+    max-width: 70%;
+}
+
+.cookie-buttons { display: flex; gap: 10px; }
+
+.cookie-buttons button {
+    font-family: 'Oswald', sans-serif;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.btn-rechazar {
+    background-color: #333;
+    color: white;
+}
+
+.cookie-buttons button:hover { transform: scale(1.05); }
+
+@media (max-width: 768px) {
+    #cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    .cookie-text { max-width: 100%; font-size: 0.85rem; }
+}
