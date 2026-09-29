@@ -40,12 +40,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const isIndex = currentUrl === "/" || currentUrl.includes("index.html") || currentUrl === "";
         const pageSwitch = document.getElementById("pageSwitch");
         if (isIndex && !pageSwitch) {
-            banner.style.borderTop = "2px solid";
-            banner.style.borderImage = "linear-gradient(to right, #34b1ff 50%, #D4AF37 50%) 1";
-            
-            btnAceptar.style.background = "linear-gradient(90deg, #34b1ff, #D4AF37)";
-            btnAceptar.style.color = "white";
-            btnAceptar.style.textShadow = "0px 1px 2px rgba(0,0,0,0.8)";
+            banner.classList.add("banner-index");
+            banner.style.borderTop = "none";
+            banner.style.borderImage = "none";
+            btnAceptar.style.background = "#ffffff";
+            btnAceptar.style.color = "#000000";
             return;
         }
         let isEventos = currentUrl.includes("eventos");
@@ -53,11 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
             isEventos = pageSwitch.checked;
         }
         const themeColor = isEventos ? "#D4AF37" : "#34b1ff";
+        banner.classList.remove("banner-index");
         banner.style.borderImage = "none";
         banner.style.borderTop = `2px solid ${themeColor}`;
         btnAceptar.style.background = themeColor;
         btnAceptar.style.color = "#000";
-        btnAceptar.style.textShadow = "none";
     }
     updateBannerTheme();
     setInterval(updateBannerTheme, 100);
