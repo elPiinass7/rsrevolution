@@ -57,3 +57,34 @@
     }
     .cookie-text { max-width: 100%; font-size: 0.85rem; }
 }
+#cookie-banner.banner-index {
+    width: 90%;
+    max-width: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -200px;
+    border-radius: 16px;
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+#cookie-banner.banner-index.show {
+    bottom: 30px;
+}
+
+#cookie-banner.banner-index .cookie-text {
+    max-width: 100%;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+#cookie-banner.banner-index .cookie-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
