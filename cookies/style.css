@@ -88,3 +88,55 @@
     justify-content: center;
     margin-top: 10px;
 }
+/* --- BOTÓN GALLETA FLOTANTE (Solo para el Index) --- */
+#cookie-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(10, 10, 10, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999999;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+#cookie-toggle-btn:hover { transform: scale(1.1); }
+#cookie-banner.banner-index {
+    width: 90%;
+    max-width: 320px;
+    left: auto;
+    right: 20px;
+    bottom: 80px;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 12px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+#cookie-banner.banner-index.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+#cookie-banner.banner-index .cookie-buttons {
+    flex-direction: column;
+    margin-top: 15px;
+}
+#cookie-banner.banner-index .cookie-buttons button {
+    width: 100%;
+}
