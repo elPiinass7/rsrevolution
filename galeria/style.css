@@ -125,3 +125,66 @@ h1, h2, h3, h4, h5, h6, .title, .navbar-brand {
     text-transform: uppercase; 
     letter-spacing: 1px;
 }
+/* --- DISEÑO DEL ACORDEÓN PREMIUM (Página Descargas) --- */
+.premium-accordion {
+    max-width: 800px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.premium-accordion summary {
+    padding: 15px 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    list-style: none; /* Quita la flechita fea */
+    outline: none;
+    font-size: 1rem;
+    color: #34b1ff; /* Toque azul RS Revolution */
+}
+
+/* Flecha personalizada */
+.premium-accordion summary::-webkit-details-marker {
+    display: none;
+}
+.premium-accordion summary::after {
+    content: '+';
+    float: right;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.premium-accordion[open] summary::after {
+    content: '-';
+}
+
+.accordion-content {
+    padding: 0 20px 20px 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.6;
+}
+.sponsor-slot {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(10, 10, 10, 0.5);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    min-height: 100px;
+}
+.sponsor-label {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
